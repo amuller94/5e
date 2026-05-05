@@ -1,5 +1,6 @@
 ---
 layout: default
+theme_color: red
 ---
 Testing testing
 Text can be **bold**, _italic_, or ~~strikethrough~~.
