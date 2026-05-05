@@ -1,10 +1,12 @@
 ---
 ---
-
-@import "{{ site.theme }}";
 h1 {
   color: red;
+  font-family: 'Copperplate';
 }
+
+@import "{{ site.theme }}";
+
 h2 {
   color: red;
 }
