@@ -1,6 +1,6 @@
 ---
 layout: default
-theme_color: red
+theme_color: hotpink
 ---
 Testing testing
 Text can be **bold**, _italic_, or ~~strikethrough~~.
