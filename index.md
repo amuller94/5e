@@ -1,8 +1,6 @@
 # (De)coding the Spellbook: A Comparative Look at Spell Distribution in D&D 5th Edition
 
----
-layout: default
----
+
 
 
 This project uses data from a [Dungeons & Dragons API](https://www.dnd5eapi.co/) to create visualizations of some of the different patterns in spell distribution within the game system, specifically its 5th edition (2014). 
