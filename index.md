@@ -1,41 +1,53 @@
-<<<<<< (De)coding the Spellbook: A Comparative Look at Spell Distribution in D&D 5th Edition
-.---
-=======
->>>>>>> 1a9096abf8e5744f68c6f237cca9475884b7e8a7
-layout: default
-theme_color: hotpink
+
 ---
-Testing testing
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+layout: default
+---
 
-[Link to another page](./another-page.html).
+# (De)coding the Spellbook: A Comparative Look at Spell Distribution in D&D 5th Edition
 
-There should be whitespace between paragraphs.
+This project uses data from a [Dungeons & Dragons API](https://www.dnd5eapi.co/) to create visualizations of some of the different patterns in spell distribution within the game system, specifically its 5th edition (2014). 
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project..
+D&D is the most popular tabletop roleplaying game (TTRPG) on the market. This is due in part to its Open Gaming License, which gives third parties blanket permission to create their own game supplements based on the D&D's fundamental mechanics. These fundamental mechanics are detailed in something called the System Reference[System Reference Document](https://www.dndbeyond.com/srd), or SRD. 
 
-# Header 1
+This project looks specifically at the spells portion of that content. There are 319 spells in the SRD, each with its own set of rules, including which of the eight included spellcasting class(es) (i.e. wizard, cleric, druid, etc.) can cast that spell; what school of magic (i.e. transmutation, illusion, necromancy, etc.) the spell belongs to; and how powerful the spell is, i.e. its numbered level (0-9). It uses visualizations to explore several questions:
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
+> **1. Do some classes have access to more high-level spells than others?**
 >
-> When something is important enough, you do it even if the odds are not in your favor.
+> **2. Are some schools of magic concentrated among specific classes?**
+>
+> **3. Is there a relationship between spell level and school of magic?**
+>
+
+
+## How many spells are there of each level?
+
+Before delving into the specifics of spell distribution across classes and schools of magic, it makes sense to begin with a visualization of 
+<img width="640" height="480" alt="spell_level_graph" src="https://github.com/user-attachments/assets/a08bf697-7f05-4f26-91d7-187607eb57a9"/>
+
+
 
 ### Header 3
 <img width="640" height="480" alt="abjuration_graph" src="https://github.com/user-attachments/assets/3db91fb3-3c36-4963-99d3-ba31880b462d" />
+
 <img width="640" height="480" alt="conjuration_graph" src="https://github.com/user-attachments/assets/57cb7549-cd92-4882-b5b2-a27e0d77f236" />
+
 <img width="640" height="480" alt="divination_graph" src="https://github.com/user-attachments/assets/f548d3be-e8e0-4608-b481-54c9fe0e730c" />
+
 <img width="640" height="480" alt="enchantment_graph" src="https://github.com/user-attachments/assets/bba4f480-a5c6-4f90-b1d1-8de2cb71129f" />
+
 <img width="640" height="480" alt="evocation_graph" src="https://github.com/user-attachments/assets/c8a85202-5ad9-465c-993c-7c345be39343" />
+
 <img width="640" height="480" alt="illusion_graph" src="https://github.com/user-attachments/assets/50335ba6-6c55-4385-8af9-1fd422ff558f" />
+
 <img width="640" height="480" alt="necromancy_graph" src="https://github.com/user-attachments/assets/698541dc-6f76-4288-956b-781fd9a95e9e" />
+
 <img width="640" height="480" alt="transmutation_graph" src="https://github.com/user-attachments/assets/c71d95b0-db0e-4ac8-ae09-252888ec7dad" />
+
 <img width="1500" height="500" alt="combined_graph" src="https://github.com/user-attachments/assets/665f88fd-2e7b-47a0-8c2d-b96395a4da23" />
-<img width="640" height="480" alt="spell_level_graph" src="https://github.com/user-attachments/assets/a08bf697-7f05-4f26-91d7-187607eb57a9" />
-<img width="640" height="480" alt="bard_graph" src="https://github.com/user-attachments/assets/f855b9c7-76ea-43c0-b7b9-d421a232dd1e" />
+
+
+<img width="640" height="480" alt="bard_graph" src="https://github.
+com/user-attachments/assets/f855b9c7-76ea-43c0-b7b9-d421a232dd1e" />
 <img width="640" height="480" alt="cleric" src="https://github.com/user-attachments/assets/42224eef-2086-4c0c-b6b2-b48ae25fcdc1" />
 <img width="640" height="480" alt="druid_graph" src="https://github.com/user-attachments/assets/bd18c45d-ec0f-400e-a9ea-82c5196e5aae" />
 <img width="640" height="480" alt="paladin_graph" src="https://github.com/user-attachments/assets/58f7282d-795b-4174-9702-070906352ab4" />
