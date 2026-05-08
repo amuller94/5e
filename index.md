@@ -1,3 +1,7 @@
+<<<<<< (De)coding the Spellbook: A Comparative Look at Spell Distribution in D&D 5th Edition
+.---
+=======
+>>>>>>> 1a9096abf8e5744f68c6f237cca9475884b7e8a7
 layout: default
 theme_color: hotpink
 ---
