@@ -1,0 +1,779 @@
+,Spell Name,Spell Level,Spell School,Class,Subclass
+0,Acid Arrow,2,evocation,wizard,all
+3,Acid Splash,0,conjuration,sorcerer,all
+4,Acid Splash,0,conjuration,wizard,all
+6,Aid,2,abjuration,cleric,all
+7,Aid,2,abjuration,paladin,all
+9,Alarm,1,abjuration,ranger,all
+10,Alarm,1,abjuration,wizard,all
+12,Alter Self,2,transmutation,sorcerer,all
+13,Alter Self,2,transmutation,wizard,all
+15,Animal Friendship,1,enchantment,bard,all
+16,Animal Friendship,1,enchantment,druid,all
+17,Animal Friendship,1,enchantment,ranger,all
+18,Animal Messenger,2,enchantment,bard,all
+19,Animal Messenger,2,enchantment,druid,all
+20,Animal Messenger,2,enchantment,ranger,all
+22,Animal Shapes,8,transmutation,druid,all
+23,Animate Dead,3,necromancy,cleric,all
+24,Animate Dead,3,necromancy,wizard,all
+26,Animate Objects,5,transmutation,bard,all
+27,Animate Objects,5,transmutation,sorcerer,all
+28,Animate Objects,5,transmutation,wizard,all
+29,Antilife Shell,5,abjuration,druid,all
+30,Antimagic Field,8,abjuration,cleric,all
+31,Antimagic Field,8,abjuration,wizard,all
+32,Antipathy/Sympathy,8,enchantment,druid,all
+33,Antipathy/Sympathy,8,enchantment,wizard,all
+34,Arcane Eye,4,divination,cleric,all
+35,Arcane Eye,4,divination,wizard,all
+36,Arcane Hand,5,evocation,wizard,all
+37,Arcane Lock,2,abjuration,wizard,all
+39,Arcane Sword,7,evocation,bard,all
+40,Arcane Sword,7,evocation,wizard,all
+41,Arcanist's Magic Aura,2,illusion,wizard,all
+43,Astral Projection,9,necromancy,cleric,all
+44,Astral Projection,9,necromancy,warlock,all
+45,Astral Projection,9,necromancy,wizard,all
+46,Augury,2,divination,cleric,all
+48,Awaken,5,transmutation,bard,all
+49,Awaken,5,transmutation,druid,all
+50,Bane,1,enchantment,bard,all
+51,Bane,1,enchantment,cleric,all
+53,Banishment,4,abjuration,cleric,all
+54,Banishment,4,abjuration,paladin,all
+55,Banishment,4,abjuration,sorcerer,all
+56,Banishment,4,abjuration,warlock,all
+57,Banishment,4,abjuration,wizard,all
+58,Barkskin,2,transmutation,druid,all
+59,Barkskin,2,transmutation,ranger,all
+62,Beacon of Hope,3,abjuration,cleric,all
+66,Bestow Curse,3,necromancy,bard,all
+67,Bestow Curse,3,necromancy,cleric,all
+68,Bestow Curse,3,necromancy,wizard,all
+70,Black Tentacles,4,conjuration,wizard,all
+71,Blade Barrier,6,evocation,cleric,all
+72,Bless,1,enchantment,cleric,all
+73,Bless,1,enchantment,paladin,all
+76,Blight,4,necromancy,druid,all
+77,Blight,4,necromancy,sorcerer,all
+78,Blight,4,necromancy,warlock,all
+79,Blight,4,necromancy,wizard,all
+81,Blindness/Deafness,2,necromancy,bard,all
+82,Blindness/Deafness,2,necromancy,cleric,all
+83,Blindness/Deafness,2,necromancy,sorcerer,all
+84,Blindness/Deafness,2,necromancy,wizard,all
+87,Blink,3,transmutation,sorcerer,all
+88,Blink,3,transmutation,wizard,all
+90,Blur,2,illusion,sorcerer,all
+91,Blur,2,illusion,wizard,all
+94,Branding Smite,2,evocation,paladin,all
+95,Burning Hands,1,evocation,sorcerer,all
+96,Burning Hands,1,evocation,wizard,all
+99,Call Lightning,3,conjuration,druid,all
+102,Calm Emotions,2,enchantment,bard,all
+103,Calm Emotions,2,enchantment,cleric,all
+105,Chain Lightning,6,evocation,sorcerer,all
+106,Chain Lightning,6,evocation,wizard,all
+107,Charm Person,1,enchantment,bard,all
+108,Charm Person,1,enchantment,druid,all
+109,Charm Person,1,enchantment,sorcerer,all
+110,Charm Person,1,enchantment,warlock,all
+111,Charm Person,1,enchantment,wizard,all
+113,Chill Touch,0,necromancy,sorcerer,all
+114,Chill Touch,0,necromancy,warlock,all
+115,Chill Touch,0,necromancy,wizard,all
+117,Circle of Death,6,necromancy,sorcerer,all
+118,Circle of Death,6,necromancy,warlock,all
+119,Circle of Death,6,necromancy,wizard,all
+120,Clairvoyance,3,divination,bard,all
+121,Clairvoyance,3,divination,cleric,all
+122,Clairvoyance,3,divination,sorcerer,all
+123,Clairvoyance,3,divination,wizard,all
+125,Clone,8,necromancy,wizard,all
+126,Cloudkill,5,conjuration,sorcerer,all
+127,Cloudkill,5,conjuration,wizard,all
+129,Color Spray,1,illusion,sorcerer,all
+130,Color Spray,1,illusion,wizard,all
+132,Command,1,enchantment,cleric,all
+133,Command,1,enchantment,paladin,all
+136,Commune,5,divination,cleric,all
+138,Commune With Nature,5,divination,druid,all
+139,Commune With Nature,5,divination,ranger,all
+141,Comprehend Languages,1,divination,bard,all
+142,Comprehend Languages,1,divination,sorcerer,all
+143,Comprehend Languages,1,divination,warlock,all
+144,Comprehend Languages,1,divination,wizard,all
+146,Compulsion,4,enchantment,bard,all
+147,Cone of Cold,5,evocation,sorcerer,all
+148,Cone of Cold,5,evocation,wizard,all
+150,Confusion,4,enchantment,bard,all
+151,Confusion,4,enchantment,druid,all
+152,Confusion,4,enchantment,sorcerer,all
+153,Confusion,4,enchantment,wizard,all
+154,Conjure Animals,3,conjuration,druid,all
+155,Conjure Animals,3,conjuration,ranger,all
+157,Conjure Celestial,7,conjuration,cleric,all
+158,Conjure Elemental,5,conjuration,druid,all
+159,Conjure Elemental,5,conjuration,wizard,all
+161,Conjure Fey,6,conjuration,druid,all
+162,Conjure Fey,6,conjuration,warlock,all
+163,Conjure Minor Elementals,4,conjuration,druid,all
+164,Conjure Minor Elementals,4,conjuration,wizard,all
+165,Conjure Woodland Beings,4,conjuration,druid,all
+166,Conjure Woodland Beings,4,conjuration,ranger,all
+167,Contact Other Plane,5,divination,warlock,all
+168,Contact Other Plane,5,divination,wizard,all
+169,Contagion,5,necromancy,cleric,all
+170,Contagion,5,necromancy,druid,all
+171,Contingency,6,evocation,wizard,all
+172,Continual Flame,2,evocation,cleric,all
+173,Continual Flame,2,evocation,wizard,all
+175,Control Water,4,transmutation,cleric,all
+176,Control Water,4,transmutation,druid,all
+177,Control Water,4,transmutation,wizard,all
+178,Control Weather,8,transmutation,cleric,all
+179,Control Weather,8,transmutation,druid,all
+180,Control Weather,8,transmutation,wizard,all
+182,Counterspell,3,abjuration,sorcerer,all
+183,Counterspell,3,abjuration,warlock,all
+184,Counterspell,3,abjuration,wizard,all
+185,Create Food and Water,3,conjuration,cleric,all
+186,Create Food and Water,3,conjuration,druid,all
+187,Create Food and Water,3,conjuration,paladin,all
+190,Create or Destroy Water,1,transmutation,cleric,all
+191,Create or Destroy Water,1,transmutation,druid,all
+193,Create Undead,6,necromancy,cleric,all
+194,Create Undead,6,necromancy,warlock,all
+195,Create Undead,6,necromancy,wizard,all
+196,Creation,5,illusion,sorcerer,all
+197,Creation,5,illusion,wizard,all
+198,Cure Wounds,1,evocation,bard,all
+199,Cure Wounds,1,evocation,cleric,all
+200,Cure Wounds,1,evocation,druid,all
+201,Cure Wounds,1,evocation,paladin,all
+202,Cure Wounds,1,evocation,ranger,all
+205,Dancing Lights,0,evocation,bard,all
+206,Dancing Lights,0,evocation,sorcerer,all
+207,Dancing Lights,0,evocation,wizard,all
+209,Darkness,2,evocation,sorcerer,all
+210,Darkness,2,evocation,warlock,all
+211,Darkness,2,evocation,wizard,all
+214,Darkvision,2,transmutation,druid,all
+215,Darkvision,2,transmutation,ranger,all
+216,Darkvision,2,transmutation,sorcerer,all
+217,Darkvision,2,transmutation,wizard,all
+219,Daylight,3,evocation,cleric,all
+220,Daylight,3,evocation,druid,all
+221,Daylight,3,evocation,paladin,all
+222,Daylight,3,evocation,ranger,all
+223,Daylight,3,evocation,sorcerer,all
+226,Death Ward,4,abjuration,cleric,all
+227,Death Ward,4,abjuration,paladin,all
+229,Delayed Blast Fireball,7,evocation,sorcerer,all
+230,Delayed Blast Fireball,7,evocation,wizard,all
+231,Demiplane,8,conjuration,warlock,all
+232,Demiplane,8,conjuration,wizard,all
+233,Detect Evil and Good,1,divination,cleric,all
+234,Detect Evil and Good,1,divination,paladin,all
+236,Detect Magic,1,divination,bard,all
+237,Detect Magic,1,divination,cleric,all
+238,Detect Magic,1,divination,druid,all
+239,Detect Magic,1,divination,paladin,all
+240,Detect Magic,1,divination,ranger,all
+241,Detect Magic,1,divination,sorcerer,all
+242,Detect Magic,1,divination,wizard,all
+244,Detect Poison and Disease,1,divination,cleric,all
+245,Detect Poison and Disease,1,divination,druid,all
+246,Detect Poison and Disease,1,divination,paladin,all
+247,Detect Poison and Disease,1,divination,ranger,all
+249,Detect Thoughts,2,divination,bard,all
+250,Detect Thoughts,2,divination,sorcerer,all
+251,Detect Thoughts,2,divination,wizard,all
+253,Dimension Door,4,conjuration,bard,all
+254,Dimension Door,4,conjuration,sorcerer,all
+255,Dimension Door,4,conjuration,warlock,all
+256,Dimension Door,4,conjuration,wizard,all
+257,Disguise Self,1,illusion,bard,all
+258,Disguise Self,1,illusion,sorcerer,all
+259,Disguise Self,1,illusion,wizard,all
+261,Disintegrate,6,transmutation,sorcerer,all
+262,Disintegrate,6,transmutation,wizard,all
+263,Dispel Evil and Good,5,abjuration,cleric,all
+264,Dispel Evil and Good,5,abjuration,paladin,all
+265,Dispel Magic,3,abjuration,bard,all
+266,Dispel Magic,3,abjuration,cleric,all
+267,Dispel Magic,3,abjuration,druid,all
+268,Dispel Magic,3,abjuration,paladin,all
+269,Dispel Magic,3,abjuration,sorcerer,all
+270,Dispel Magic,3,abjuration,warlock,all
+271,Dispel Magic,3,abjuration,wizard,all
+274,Divination,4,divination,druid,all
+276,Divine Favor,1,evocation,paladin,all
+278,Divine Word,7,evocation,cleric,all
+279,Dominate Beast,4,enchantment,druid,all
+280,Dominate Beast,4,enchantment,sorcerer,all
+281,Dominate Monster,8,enchantment,bard,all
+282,Dominate Monster,8,enchantment,sorcerer,all
+283,Dominate Monster,8,enchantment,warlock,all
+284,Dominate Monster,8,enchantment,wizard,all
+285,Dominate Person,5,enchantment,bard,all
+286,Dominate Person,5,enchantment,sorcerer,all
+287,Dominate Person,5,enchantment,wizard,all
+288,Dream,5,illusion,bard,all
+289,Dream,5,illusion,warlock,all
+290,Dream,5,illusion,wizard,all
+292,Druidcraft,0,transmutation,druid,all
+293,Earthquake,8,evocation,cleric,all
+294,Earthquake,8,evocation,druid,all
+295,Earthquake,8,evocation,sorcerer,all
+296,Eldritch Blast,0,evocation,warlock,all
+298,Enhance Ability,2,transmutation,bard,all
+299,Enhance Ability,2,transmutation,cleric,all
+300,Enhance Ability,2,transmutation,druid,all
+301,Enhance Ability,2,transmutation,sorcerer,all
+303,Enlarge/Reduce,2,transmutation,sorcerer,all
+304,Enlarge/Reduce,2,transmutation,wizard,all
+306,Entangle,1,conjuration,druid,all
+308,Enthrall,2,enchantment,bard,all
+309,Enthrall,2,enchantment,warlock,all
+311,Etherealness,7,transmutation,bard,all
+312,Etherealness,7,transmutation,cleric,all
+313,Etherealness,7,transmutation,sorcerer,all
+314,Etherealness,7,transmutation,warlock,all
+315,Etherealness,7,transmutation,wizard,all
+316,Expeditious Retreat,1,transmutation,sorcerer,all
+317,Expeditious Retreat,1,transmutation,warlock,all
+318,Expeditious Retreat,1,transmutation,wizard,all
+320,Eyebite,6,necromancy,bard,all
+321,Eyebite,6,necromancy,sorcerer,all
+322,Eyebite,6,necromancy,warlock,all
+323,Eyebite,6,necromancy,wizard,all
+324,Fabricate,4,transmutation,wizard,all
+325,Faerie Fire,1,evocation,druid,all
+327,Faithful Hound,4,conjuration,wizard,all
+328,False Life,1,necromancy,sorcerer,all
+329,False Life,1,necromancy,wizard,all
+331,Fear,3,illusion,bard,all
+332,Fear,3,illusion,sorcerer,all
+333,Fear,3,illusion,warlock,all
+334,Fear,3,illusion,wizard,all
+336,Feather Fall,1,transmutation,bard,all
+337,Feather Fall,1,transmutation,sorcerer,all
+338,Feather Fall,1,transmutation,wizard,all
+340,Feeblemind,8,enchantment,bard,all
+341,Feeblemind,8,enchantment,druid,all
+342,Feeblemind,8,enchantment,warlock,all
+343,Feeblemind,8,enchantment,wizard,all
+344,Find Familiar,1,conjuration,wizard,all
+345,Find Steed,2,conjuration,paladin,all
+347,Find the Path,6,divination,bard,all
+348,Find the Path,6,divination,cleric,all
+349,Find the Path,6,divination,druid,all
+350,Find Traps,2,divination,cleric,all
+351,Find Traps,2,divination,druid,all
+352,Find Traps,2,divination,ranger,all
+354,Finger of Death,7,necromancy,sorcerer,all
+355,Finger of Death,7,necromancy,warlock,all
+356,Finger of Death,7,necromancy,wizard,all
+357,Fire Bolt,0,evocation,sorcerer,all
+358,Fire Bolt,0,evocation,wizard,all
+359,Fire Shield,4,evocation,wizard,all
+361,Fire Storm,7,evocation,cleric,all
+362,Fire Storm,7,evocation,druid,all
+363,Fire Storm,7,evocation,sorcerer,all
+364,Fireball,3,evocation,sorcerer,all
+365,Fireball,3,evocation,wizard,all
+368,Flame Blade,2,evocation,druid,all
+370,Flame Strike,5,evocation,cleric,all
+373,Flaming Sphere,2,conjuration,druid,all
+374,Flaming Sphere,2,conjuration,wizard,all
+376,Flesh to Stone,6,transmutation,warlock,all
+377,Flesh to Stone,6,transmutation,wizard,all
+378,Floating Disk,1,conjuration,wizard,all
+380,Fly,3,transmutation,sorcerer,all
+381,Fly,3,transmutation,warlock,all
+382,Fly,3,transmutation,wizard,all
+384,Fog Cloud,1,conjuration,druid,all
+385,Fog Cloud,1,conjuration,ranger,all
+386,Fog Cloud,1,conjuration,sorcerer,all
+387,Fog Cloud,1,conjuration,wizard,all
+389,Forbiddance,6,abjuration,cleric,all
+390,Forcecage,7,evocation,bard,all
+391,Forcecage,7,evocation,warlock,all
+392,Forcecage,7,evocation,wizard,all
+393,Foresight,9,divination,bard,all
+394,Foresight,9,divination,druid,all
+395,Foresight,9,divination,warlock,all
+396,Foresight,9,divination,wizard,all
+397,Freedom of Movement,4,abjuration,bard,all
+398,Freedom of Movement,4,abjuration,cleric,all
+399,Freedom of Movement,4,abjuration,druid,all
+400,Freedom of Movement,4,abjuration,ranger,all
+403,Freezing Sphere,6,evocation,wizard,all
+404,Gaseous Form,3,transmutation,sorcerer,all
+405,Gaseous Form,3,transmutation,warlock,all
+406,Gaseous Form,3,transmutation,wizard,all
+409,Gate,9,conjuration,cleric,all
+410,Gate,9,conjuration,sorcerer,all
+411,Gate,9,conjuration,wizard,all
+412,Geas,5,enchantment,bard,all
+413,Geas,5,enchantment,cleric,all
+414,Geas,5,enchantment,druid,all
+415,Geas,5,enchantment,paladin,all
+416,Geas,5,enchantment,wizard,all
+417,Gentle Repose,2,necromancy,cleric,all
+418,Gentle Repose,2,necromancy,wizard,all
+420,Giant Insect,4,transmutation,druid,all
+421,Glibness,8,transmutation,bard,all
+422,Glibness,8,transmutation,warlock,all
+423,Globe of Invulnerability,6,abjuration,sorcerer,all
+424,Globe of Invulnerability,6,abjuration,wizard,all
+425,Glyph of Warding,3,abjuration,bard,all
+426,Glyph of Warding,3,abjuration,cleric,all
+427,Glyph of Warding,3,abjuration,wizard,all
+429,Goodberry,1,transmutation,druid,all
+430,Goodberry,1,transmutation,ranger,all
+431,Grease,1,conjuration,wizard,all
+433,Greater Invisibility,4,illusion,bard,all
+434,Greater Invisibility,4,illusion,sorcerer,all
+435,Greater Invisibility,4,illusion,wizard,all
+437,Greater Restoration,5,abjuration,bard,all
+438,Greater Restoration,5,abjuration,cleric,all
+439,Greater Restoration,5,abjuration,druid,all
+440,Guardian of Faith,4,conjuration,cleric,all
+441,Guards and Wards,6,abjuration,bard,all
+442,Guards and Wards,6,abjuration,wizard,all
+443,Guidance,0,divination,cleric,all
+444,Guidance,0,divination,druid,all
+446,Guiding Bolt,1,evocation,cleric,all
+448,Gust of Wind,2,evocation,druid,all
+449,Gust of Wind,2,evocation,sorcerer,all
+450,Gust of Wind,2,evocation,wizard,all
+452,Hallow,5,evocation,cleric,all
+454,Hallucinatory Terrain,4,illusion,bard,all
+455,Hallucinatory Terrain,4,illusion,druid,all
+456,Hallucinatory Terrain,4,illusion,warlock,all
+457,Hallucinatory Terrain,4,illusion,wizard,all
+459,Harm,6,necromancy,cleric,all
+460,Haste,3,transmutation,sorcerer,all
+461,Haste,3,transmutation,wizard,all
+464,Heal,6,evocation,cleric,all
+465,Heal,6,evocation,druid,all
+466,Healing Word,1,evocation,bard,all
+467,Healing Word,1,evocation,cleric,all
+468,Healing Word,1,evocation,druid,all
+470,Heat Metal,2,transmutation,bard,all
+471,Heat Metal,2,transmutation,druid,all
+473,Hellish Rebuke,1,evocation,warlock,all
+474,Heroes' Feast,6,conjuration,cleric,all
+475,Heroes' Feast,6,conjuration,druid,all
+476,Heroism,1,enchantment,bard,all
+477,Heroism,1,enchantment,paladin,all
+479,Hideous Laughter,1,enchantment,bard,all
+480,Hideous Laughter,1,enchantment,wizard,all
+482,Hold Monster,5,enchantment,bard,all
+483,Hold Monster,5,enchantment,sorcerer,all
+484,Hold Monster,5,enchantment,warlock,all
+485,Hold Monster,5,enchantment,wizard,all
+486,Hold Person,2,enchantment,bard,all
+487,Hold Person,2,enchantment,cleric,all
+488,Hold Person,2,enchantment,druid,all
+489,Hold Person,2,enchantment,sorcerer,all
+490,Hold Person,2,enchantment,warlock,all
+491,Hold Person,2,enchantment,wizard,all
+494,Holy Aura,8,abjuration,cleric,all
+495,Hunter's Mark,1,divination,ranger,all
+496,Hypnotic Pattern,3,illusion,bard,all
+497,Hypnotic Pattern,3,illusion,sorcerer,all
+498,Hypnotic Pattern,3,illusion,warlock,all
+499,Hypnotic Pattern,3,illusion,wizard,all
+501,Ice Storm,4,evocation,druid,all
+502,Ice Storm,4,evocation,sorcerer,all
+503,Ice Storm,4,evocation,wizard,all
+505,Identify,1,divination,bard,all
+506,Identify,1,divination,wizard,all
+508,Illusory Script,1,illusion,bard,all
+509,Illusory Script,1,illusion,warlock,all
+510,Illusory Script,1,illusion,wizard,all
+512,Imprisonment,9,abjuration,warlock,all
+513,Imprisonment,9,abjuration,wizard,all
+514,Incendiary Cloud,8,conjuration,sorcerer,all
+515,Incendiary Cloud,8,conjuration,wizard,all
+516,Inflict Wounds,1,necromancy,cleric,all
+518,Insect Plague,5,conjuration,cleric,all
+519,Insect Plague,5,conjuration,druid,all
+520,Insect Plague,5,conjuration,sorcerer,all
+522,Instant Summons,6,conjuration,wizard,all
+523,Invisibility,2,illusion,bard,all
+524,Invisibility,2,illusion,sorcerer,all
+525,Invisibility,2,illusion,warlock,all
+526,Invisibility,2,illusion,wizard,all
+529,Irresistible Dance,6,enchantment,bard,all
+530,Irresistible Dance,6,enchantment,wizard,all
+531,Jump,1,transmutation,druid,all
+532,Jump,1,transmutation,ranger,all
+533,Jump,1,transmutation,sorcerer,all
+534,Jump,1,transmutation,wizard,all
+536,Knock,2,transmutation,bard,all
+537,Knock,2,transmutation,sorcerer,all
+538,Knock,2,transmutation,wizard,all
+540,Legend Lore,5,divination,bard,all
+541,Legend Lore,5,divination,cleric,all
+542,Legend Lore,5,divination,wizard,all
+543,Lesser Restoration,2,abjuration,bard,all
+544,Lesser Restoration,2,abjuration,cleric,all
+545,Lesser Restoration,2,abjuration,druid,all
+546,Lesser Restoration,2,abjuration,paladin,all
+547,Lesser Restoration,2,abjuration,ranger,all
+551,Levitate,2,transmutation,sorcerer,all
+552,Levitate,2,transmutation,wizard,all
+554,Light,0,evocation,bard,all
+555,Light,0,evocation,cleric,all
+556,Light,0,evocation,sorcerer,all
+557,Light,0,evocation,wizard,all
+559,Lightning Bolt,3,evocation,sorcerer,all
+560,Lightning Bolt,3,evocation,wizard,all
+563,Locate Animals or Plants,2,divination,bard,all
+564,Locate Animals or Plants,2,divination,druid,all
+565,Locate Animals or Plants,2,divination,ranger,all
+567,Locate Creature,4,divination,bard,all
+568,Locate Creature,4,divination,cleric,all
+569,Locate Creature,4,divination,druid,all
+570,Locate Creature,4,divination,paladin,all
+571,Locate Creature,4,divination,ranger,all
+572,Locate Creature,4,divination,wizard,all
+574,Locate Object,2,divination,bard,all
+575,Locate Object,2,divination,cleric,all
+576,Locate Object,2,divination,druid,all
+577,Locate Object,2,divination,paladin,all
+578,Locate Object,2,divination,ranger,all
+579,Locate Object,2,divination,wizard,all
+581,Longstrider,1,transmutation,bard,all
+582,Longstrider,1,transmutation,druid,all
+583,Longstrider,1,transmutation,ranger,all
+584,Longstrider,1,transmutation,wizard,all
+586,Mage Armor,1,abjuration,sorcerer,all
+587,Mage Armor,1,abjuration,wizard,all
+589,Mage Hand,0,conjuration,bard,all
+590,Mage Hand,0,conjuration,sorcerer,all
+591,Mage Hand,0,conjuration,warlock,all
+592,Mage Hand,0,conjuration,wizard,all
+594,Magic Circle,3,abjuration,cleric,all
+595,Magic Circle,3,abjuration,paladin,all
+596,Magic Circle,3,abjuration,warlock,all
+597,Magic Circle,3,abjuration,wizard,all
+599,Magic Jar,6,necromancy,wizard,all
+600,Magic Missile,1,evocation,sorcerer,all
+601,Magic Missile,1,evocation,wizard,all
+603,Magic Mouth,2,illusion,bard,all
+604,Magic Mouth,2,illusion,wizard,all
+606,Magic Weapon,2,transmutation,paladin,all
+607,Magic Weapon,2,transmutation,wizard,all
+609,Magnificent Mansion,7,conjuration,bard,all
+610,Magnificent Mansion,7,conjuration,wizard,all
+611,Major Image,3,illusion,bard,all
+612,Major Image,3,illusion,sorcerer,all
+613,Major Image,3,illusion,warlock,all
+614,Major Image,3,illusion,wizard,all
+616,Mass Cure Wounds,5,conjuration,bard,all
+617,Mass Cure Wounds,5,conjuration,cleric,all
+618,Mass Cure Wounds,5,conjuration,druid,all
+620,Mass Heal,9,conjuration,cleric,all
+621,Mass Healing Word,3,evocation,cleric,all
+623,Mass Suggestion,6,enchantment,bard,all
+624,Mass Suggestion,6,enchantment,sorcerer,all
+625,Mass Suggestion,6,enchantment,warlock,all
+626,Mass Suggestion,6,enchantment,wizard,all
+627,Maze,8,conjuration,wizard,all
+628,Meld Into Stone,3,transmutation,cleric,all
+631,Mending,0,transmutation,cleric,all
+632,Mending,0,transmutation,bard,all
+633,Mending,0,transmutation,druid,all
+634,Mending,0,transmutation,sorcerer,all
+635,Mending,0,transmutation,wizard,all
+637,Message,0,transmutation,bard,all
+638,Message,0,transmutation,sorcerer,all
+639,Message,0,transmutation,wizard,all
+641,Meteor Swarm,9,evocation,sorcerer,all
+642,Meteor Swarm,9,evocation,wizard,all
+643,Mind Blank,8,abjuration,bard,all
+644,Mind Blank,8,abjuration,wizard,all
+645,Minor Illusion,0,illusion,bard,all
+646,Minor Illusion,0,illusion,sorcerer,all
+647,Minor Illusion,0,illusion,warlock,all
+648,Minor Illusion,0,illusion,wizard,all
+650,Mirage Arcane,7,illusion,bard,all
+651,Mirage Arcane,7,illusion,druid,all
+652,Mirage Arcane,7,illusion,wizard,all
+653,Mirror Image,2,illusion,sorcerer,all
+654,Mirror Image,2,illusion,warlock,all
+655,Mirror Image,2,illusion,wizard,all
+658,Mislead,5,illusion,bard,all
+659,Mislead,5,illusion,wizard,all
+660,Misty Step,2,conjuration,sorcerer,all
+661,Misty Step,2,conjuration,warlock,all
+662,Misty Step,2,conjuration,wizard,all
+665,Modify Memory,5,enchantment,bard,all
+666,Modify Memory,5,enchantment,wizard,all
+667,Moonbeam,2,evocation,druid,all
+669,Move Earth,6,transmutation,druid,all
+670,Move Earth,6,transmutation,sorcerer,all
+671,Move Earth,6,transmutation,wizard,all
+672,Nondetection,3,abjuration,bard,all
+673,Nondetection,3,abjuration,ranger,all
+674,Nondetection,3,abjuration,wizard,all
+676,Pass Without Trace,2,abjuration,druid,all
+677,Pass Without Trace,2,abjuration,ranger,all
+680,Passwall,5,transmutation,wizard,all
+682,Phantasmal Killer,4,illusion,wizard,all
+683,Phantom Steed,3,illusion,wizard,all
+685,Planar Ally,6,conjuration,cleric,all
+686,Planar Binding,5,abjuration,bard,all
+687,Planar Binding,5,abjuration,cleric,all
+688,Planar Binding,5,abjuration,druid,all
+689,Planar Binding,5,abjuration,wizard,all
+690,Plane Shift,7,conjuration,cleric,all
+691,Plane Shift,7,conjuration,druid,all
+692,Plane Shift,7,conjuration,sorcerer,all
+693,Plane Shift,7,conjuration,warlock,all
+694,Plane Shift,7,conjuration,wizard,all
+695,Plant Growth,3,transmutation,bard,all
+696,Plant Growth,3,transmutation,druid,all
+697,Plant Growth,3,transmutation,ranger,all
+700,Poison Spray,0,conjuration,sorcerer,all
+701,Poison Spray,0,conjuration,warlock,all
+702,Poison Spray,0,conjuration,wizard,all
+703,Poison Spray,0,conjuration,druid,all
+704,Polymorph,4,transmutation,bard,all
+705,Polymorph,4,transmutation,druid,all
+706,Polymorph,4,transmutation,sorcerer,all
+707,Polymorph,4,transmutation,wizard,all
+708,Power Word Kill,9,enchantment,bard,all
+709,Power Word Kill,9,enchantment,sorcerer,all
+710,Power Word Kill,9,enchantment,warlock,all
+711,Power Word Kill,9,enchantment,wizard,all
+712,Power Word Stun,8,enchantment,bard,all
+713,Power Word Stun,8,enchantment,sorcerer,all
+714,Power Word Stun,8,enchantment,warlock,all
+715,Power Word Stun,8,enchantment,wizard,all
+716,Prayer of Healing,2,evocation,cleric,all
+718,Prestidigitation,0,transmutation,bard,all
+719,Prestidigitation,0,transmutation,sorcerer,all
+720,Prestidigitation,0,transmutation,warlock,all
+721,Prestidigitation,0,transmutation,wizard,all
+723,Prismatic Spray,7,evocation,sorcerer,all
+724,Prismatic Spray,7,evocation,wizard,all
+725,Prismatic Wall,9,abjuration,wizard,all
+726,Private Sanctum,4,abjuration,wizard,all
+727,Produce Flame,0,conjuration,druid,all
+729,Programmed Illusion,6,illusion,bard,all
+730,Programmed Illusion,6,illusion,wizard,all
+731,Project Image,7,illusion,bard,all
+732,Project Image,7,illusion,wizard,all
+733,Protection From Energy,3,abjuration,cleric,all
+734,Protection From Energy,3,abjuration,druid,all
+735,Protection From Energy,3,abjuration,ranger,all
+736,Protection From Energy,3,abjuration,sorcerer,all
+737,Protection From Energy,3,abjuration,wizard,all
+740,Protection from Evil and Good,1,abjuration,cleric,all
+741,Protection from Evil and Good,1,abjuration,paladin,all
+742,Protection from Evil and Good,1,abjuration,warlock,all
+743,Protection from Evil and Good,1,abjuration,wizard,all
+746,Protection from Poison,2,abjuration,cleric,all
+747,Protection from Poison,2,abjuration,druid,all
+748,Protection from Poison,2,abjuration,paladin,all
+749,Protection from Poison,2,abjuration,ranger,all
+751,Purify Food and Drink,1,transmutation,cleric,all
+752,Purify Food and Drink,1,transmutation,druid,all
+753,Purify Food and Drink,1,transmutation,paladin,all
+755,Raise Dead,5,necromancy,bard,all
+756,Raise Dead,5,necromancy,cleric,all
+757,Raise Dead,5,necromancy,paladin,all
+759,Ray of Enfeeblement,2,necromancy,warlock,all
+760,Ray of Enfeeblement,2,necromancy,wizard,all
+762,Ray of Frost,0,evocation,sorcerer,all
+763,Ray of Frost,0,evocation,wizard,all
+765,Regenerate,7,transmutation,bard,all
+766,Regenerate,7,transmutation,cleric,all
+767,Regenerate,7,transmutation,druid,all
+768,Reincarnate,5,transmutation,druid,all
+769,Remove Curse,3,abjuration,cleric,all
+770,Remove Curse,3,abjuration,paladin,all
+771,Remove Curse,3,abjuration,warlock,all
+772,Remove Curse,3,abjuration,wizard,all
+774,Resilient Sphere,4,evocation,wizard,all
+775,Resistance,0,abjuration,cleric,all
+776,Resistance,0,abjuration,druid,all
+778,Resurrection,7,necromancy,bard,all
+779,Resurrection,7,necromancy,cleric,all
+780,Reverse Gravity,7,transmutation,druid,all
+781,Reverse Gravity,7,transmutation,sorcerer,all
+782,Reverse Gravity,7,transmutation,wizard,all
+783,Revivify,3,conjuration,cleric,all
+784,Revivify,3,conjuration,paladin,all
+787,Rope Trick,2,transmutation,wizard,all
+789,Sacred Flame,0,evocation,cleric,all
+791,Sanctuary,1,abjuration,cleric,all
+794,Scorching Ray,2,evocation,sorcerer,all
+795,Scorching Ray,2,evocation,wizard,all
+798,Scrying,5,divination,bard,all
+799,Scrying,5,divination,cleric,all
+800,Scrying,5,divination,druid,all
+801,Scrying,5,divination,warlock,all
+802,Scrying,5,divination,wizard,all
+804,Secret Chest,4,conjuration,wizard,all
+805,See Invisibility,2,divination,bard,all
+806,See Invisibility,2,divination,sorcerer,all
+807,See Invisibility,2,divination,wizard,all
+809,Seeming,5,illusion,bard,all
+810,Seeming,5,illusion,sorcerer,all
+811,Seeming,5,illusion,wizard,all
+812,Sending,3,evocation,bard,all
+813,Sending,3,evocation,cleric,all
+814,Sending,3,evocation,wizard,all
+816,Sequester,7,transmutation,wizard,all
+817,Shapechange,9,transmutation,druid,all
+818,Shapechange,9,transmutation,wizard,all
+819,Shatter,2,evocation,bard,all
+820,Shatter,2,evocation,sorcerer,all
+821,Shatter,2,evocation,warlock,all
+822,Shatter,2,evocation,wizard,all
+824,Shield,1,abjuration,sorcerer,all
+825,Shield,1,abjuration,wizard,all
+827,Shield of Faith,1,abjuration,cleric,all
+828,Shield of Faith,1,abjuration,paladin,all
+830,Shillelagh,0,transmutation,druid,all
+832,Shocking Grasp,0,evocation,sorcerer,all
+833,Shocking Grasp,0,evocation,wizard,all
+835,Silence,2,illusion,bard,all
+836,Silence,2,illusion,cleric,all
+837,Silence,2,illusion,ranger,all
+840,Silent Image,1,illusion,bard,all
+841,Silent Image,1,illusion,sorcerer,all
+842,Silent Image,1,illusion,wizard,all
+844,Simulacrum,7,illusion,wizard,all
+845,Sleep,1,enchantment,bard,all
+846,Sleep,1,enchantment,sorcerer,all
+847,Sleep,1,enchantment,wizard,all
+849,Sleet Storm,3,conjuration,druid,all
+850,Sleet Storm,3,conjuration,sorcerer,all
+851,Sleet Storm,3,conjuration,wizard,all
+854,Slow,3,transmutation,sorcerer,all
+855,Slow,3,transmutation,wizard,all
+858,Spare the Dying,0,necromancy,cleric,all
+859,Speak with Animals,1,divination,bard,all
+860,Speak with Animals,1,divination,druid,all
+861,Speak with Animals,1,divination,ranger,all
+863,Speak with Dead,3,necromancy,bard,all
+864,Speak with Dead,3,necromancy,cleric,all
+866,Speak with Plants,3,transmutation,bard,all
+867,Speak with Plants,3,transmutation,druid,all
+868,Speak with Plants,3,transmutation,ranger,all
+870,Spider Climb,2,transmutation,sorcerer,all
+871,Spider Climb,2,transmutation,warlock,all
+872,Spider Climb,2,transmutation,wizard,all
+875,Spike Growth,2,transmutation,druid,all
+876,Spike Growth,2,transmutation,ranger,all
+879,Spirit Guardians,3,conjuration,cleric,all
+881,Spiritual Weapon,2,evocation,cleric,all
+884,Stinking Cloud,3,conjuration,bard,all
+885,Stinking Cloud,3,conjuration,sorcerer,all
+886,Stinking Cloud,3,conjuration,wizard,all
+890,Stone Shape,4,transmutation,cleric,all
+891,Stone Shape,4,transmutation,druid,all
+892,Stone Shape,4,transmutation,wizard,all
+894,Stoneskin,4,abjuration,druid,all
+895,Stoneskin,4,abjuration,ranger,all
+896,Stoneskin,4,abjuration,sorcerer,all
+897,Stoneskin,4,abjuration,wizard,all
+899,Storm of Vengeance,9,conjuration,druid,all
+900,Suggestion,2,enchantment,bard,all
+901,Suggestion,2,enchantment,sorcerer,all
+902,Suggestion,2,enchantment,warlock,all
+903,Suggestion,2,enchantment,wizard,all
+905,Sunbeam,6,evocation,druid,all
+906,Sunbeam,6,evocation,sorcerer,all
+907,Sunbeam,6,evocation,wizard,all
+908,Sunburst,8,evocation,druid,all
+909,Sunburst,8,evocation,sorcerer,all
+910,Sunburst,8,evocation,wizard,all
+911,Symbol,7,abjuration,bard,all
+912,Symbol,7,abjuration,cleric,all
+913,Symbol,7,abjuration,wizard,all
+914,Telekinesis,5,transmutation,sorcerer,all
+915,Telekinesis,5,transmutation,wizard,all
+916,Telepathic Bond,5,divination,wizard,all
+917,Teleport,7,conjuration,bard,all
+918,Teleport,7,conjuration,sorcerer,all
+919,Teleport,7,conjuration,wizard,all
+920,Teleportation Circle,5,conjuration,bard,all
+921,Teleportation Circle,5,conjuration,sorcerer,all
+922,Teleportation Circle,5,conjuration,wizard,all
+923,Thaumaturgy,0,transmutation,cleric,all
+925,Thunderwave,1,evocation,bard,all
+926,Thunderwave,1,evocation,druid,all
+927,Thunderwave,1,evocation,sorcerer,all
+928,Thunderwave,1,evocation,wizard,all
+930,Time Stop,9,transmutation,sorcerer,all
+931,Time Stop,9,transmutation,wizard,all
+932,Tiny Hut,3,evocation,bard,all
+933,Tiny Hut,3,evocation,wizard,all
+935,Tongues,3,divination,bard,all
+936,Tongues,3,divination,cleric,all
+937,Tongues,3,divination,sorcerer,all
+938,Tongues,3,divination,warlock,all
+939,Tongues,3,divination,wizard,all
+941,Transport via Plants,6,conjuration,druid,all
+942,Tree Stride,5,conjuration,druid,all
+943,Tree Stride,5,conjuration,ranger,all
+945,True Polymorph,9,transmutation,bard,all
+946,True Polymorph,9,transmutation,warlock,all
+947,True Polymorph,9,transmutation,wizard,all
+948,True Resurrection,9,necromancy,cleric,all
+949,True Resurrection,9,necromancy,druid,all
+950,True Seeing,6,divination,bard,all
+951,True Seeing,6,divination,cleric,all
+952,True Seeing,6,divination,sorcerer,all
+953,True Seeing,6,divination,warlock,all
+954,True Seeing,6,divination,wizard,all
+955,True Strike,0,divination,bard,all
+956,True Strike,0,divination,sorcerer,all
+957,True Strike,0,divination,warlock,all
+958,True Strike,0,divination,wizard,all
+960,Unseen Servant,1,conjuration,bard,all
+961,Unseen Servant,1,conjuration,warlock,all
+962,Unseen Servant,1,conjuration,wizard,all
+964,Vampiric Touch,3,necromancy,warlock,all
+965,Vampiric Touch,3,necromancy,wizard,all
+967,Vicious Mockery,0,enchantment,bard,all
+968,Wall of Fire,4,evocation,druid,all
+969,Wall of Fire,4,evocation,sorcerer,all
+970,Wall of Fire,4,evocation,wizard,all
+972,Wall of Force,5,evocation,wizard,all
+973,Wall of Ice,6,evocation,wizard,all
+974,Wall of Stone,5,evocation,druid,all
+975,Wall of Stone,5,evocation,sorcerer,all
+976,Wall of Stone,5,evocation,wizard,all
+978,Wall of Thorns,6,conjuration,druid,all
+979,Warding Bond,2,abjuration,cleric,all
+981,Water Breathing,3,transmutation,druid,all
+982,Water Breathing,3,transmutation,ranger,all
+983,Water Breathing,3,transmutation,sorcerer,all
+984,Water Breathing,3,transmutation,wizard,all
+987,Water Walk,3,transmutation,cleric,all
+988,Water Walk,3,transmutation,druid,all
+989,Water Walk,3,transmutation,ranger,all
+990,Water Walk,3,transmutation,sorcerer,all
+993,Web,2,conjuration,sorcerer,all
+994,Web,2,conjuration,wizard,all
+997,Weird,9,illusion,wizard,all
+998,Wind Walk,6,transmutation,druid,all
+999,Wind Wall,3,evocation,druid,all
+1000,Wind Wall,3,evocation,ranger,all
+1002,Wish,9,conjuration,sorcerer,all
+1003,Wish,9,conjuration,wizard,all
+1004,Word of Recall,6,conjuration,cleric,all
+1005,Zone of Truth,2,enchantment,bard,all
+1006,Zone of Truth,2,enchantment,cleric,all
+1007,Zone of Truth,2,enchantment,paladin,all
