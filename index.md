@@ -39,7 +39,7 @@ These graphs show the number of spells of each level available to full casters. 
 <br>
 <img src="warlock_graph-1.png" width="600">
 <br>
-<img src="wizard_graph-1.png" width="600">
+<img src="wizard_graph.png" width="600">
 
 And of course, our half-casters:
 <br>
@@ -48,7 +48,7 @@ And of course, our half-casters:
 <img src="ranger_graph-1.png" width="600">
 
 Below is a comparison between all eight spellcasting classes. 
-![alt text](class_spell_graph-1.png) Click [here](/class_spell_graph-1.png) for a larger view. 
+![alt text](/images/class_spell_graph-1.png) Click [here](/images/class_spell_graph-1.png) for a larger view. 
 
 
 I've also generated a set of graphs showing the schools of spells accessible to only one class, accessible to two classes, etc., going all the way up to seven classes (no spells were accessible to all eight casting classes).
@@ -67,7 +67,7 @@ I've also generated a set of graphs showing the schools of spells accessible to 
 <img src="sevenschools_graph-2.png" width="600">
 <br>
 <br>
-This graph sets the data from the above graphs side-by-side, allowing for an overall view of the data. Click [here](/allschools_graph-2.png) for a larger view. 
+This graph sets the data from the above graphs side-by-side, allowing for an overall view of the data. Click [here](/images/allschools_graph-2.png) for a larger view. 
 
 <img src="allschools_graph-2.png" width="800">
 
@@ -93,7 +93,7 @@ These graphs show the number of spells from each school of magic available to ea
 <img src="transmutation_graph-1.png" width="600">
 <br>
 <br>
-Below is a comparison between the different spell schools grouped by class. Click [here](/combined_graph-1.png) for a larger view. 
+Below is a comparison between the different spell schools grouped by class. Click [here](/images/combined_graph-1.png) for a larger view. 
 
 <img src="combined_graph-1.png" width="800">
 <br>
@@ -123,16 +123,8 @@ These graphs show the distribution of spell schools at each spell level.
 <img src="lvl9_schools-1.png" width="600">
 <br>
 <br>
-Below is a version that shows the distribution of the spells in each class. Click [here](/allschools_graph-3.png) for a larger view. 
+Below is a version that shows the distribution of the spells in each class. Click [here](/images/all_lvls_graph.png) for a larger view. 
 
-<img src="allschools_graph-3.png" width="800">
+<img src="all_lvls_graph.png" width="800">
 
-
-
-#### Header 4
-##### Header 5
-###### Header 6
-### There's a horizontal rule below this.
-
-* * *
 
