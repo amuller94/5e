@@ -48,7 +48,8 @@ And of course, our half-casters:
 <img src="ranger_graph-1.png" width="600">
 
 Below is a comparison between all eight spellcasting classes. 
-![alt text](class_spell_graph-1.png)
+![alt text](class_spell_graph-1.png) Click [here](/class_spell_graph-1.png) for a larger view. 
+
 
 I've also generated a set of graphs showing the schools of spells accessible to only one class, accessible to two classes, etc., going all the way up to seven classes (no spells were accessible to all eight casting classes).
 <img src="oneschool_graph-1.png" width="600">
@@ -66,7 +67,7 @@ I've also generated a set of graphs showing the schools of spells accessible to 
 <img src="sevenschools_graph-2.png" width="600">
 <br>
 <br>
-This graph sets the data from the above graphs side-by-side, allowing for an overall view of the data.
+This graph sets the data from the above graphs side-by-side, allowing for an overall view of the data. Click [here](/allschools_graph-2.png) for a larger view. 
 
 <img src="allschools_graph-2.png" width="800">
 
@@ -92,7 +93,7 @@ These graphs show the number of spells from each school of magic available to ea
 <img src="transmutation_graph-1.png" width="600">
 <br>
 <br>
-Below is a comparison between the different spell schools grouped by class.
+Below is a comparison between the different spell schools grouped by class. Click [here](/combined_graph-1.png) for a larger view. 
 
 <img src="combined_graph-1.png" width="800">
 <br>
