@@ -39,6 +39,20 @@ And of course, our half-casters:
 Below is a comparison between all eight spellcasting classes. 
 ![alt text](class_spell_graph.png)
 
+
+I've also generated a set of graphs showing the schools of spells accessible to only one class, accessible to two classes, etc., going all the way up to seven classes (no spells were accessible to all eight casting classes).
+![alt text](oneschool_graph.png)
+![alt text](twoschools_graph.png) 
+![alt text](threeschools_graph.png) 
+![alt text](fourschools_graph.png) 
+![alt text](fiveschools_graph.png) 
+![alt text](sixschools_graph.png) 
+![alt text](sevenschools_graph.png) 
+
+This graph sets the data from the above graphs side-by-side, allowing for an overall view of the data.
+![alt text](allschools_graph.png) 
+
+
 ## 2. Are some schools of magic concentrated among specific classes?
 
 These graphs show the number of spells from each school of magic available to each spellcasting class. 
@@ -56,10 +70,20 @@ Below is a comparison between the different spell schools grouped by class.
 
 ## 3. Is there a relationship between spell level and school of magic?
 
+These graphs show the distribution of spell schools at each spell level.
+![alt text](cantrips_schools.png)
+![alt text](lvl1_schools.png) 
+![alt text](lvl2_schools.png) 
+![alt text](lvl3_schools.png) 
+![alt text](lvl4_schools.png) 
+![alt text](lvl5_schools.png) 
+![alt text](lvl6_schools.png) 
+![alt text](lvl7_schools.png) 
+![alt text](lvl8_schools.png) 
+![alt text](lvl9_schools.png)
 
-
----
-
+Below is a version that shows the spell school 
+![alt text](all_lvls_graph.png)
 
 
 #### Header 4
@@ -69,48 +93,3 @@ Below is a comparison between the different spell schools grouped by class.
 
 * * *
 
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
