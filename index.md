@@ -12,7 +12,7 @@ This project looks specifically at the spells portion of that content. There are
 >
 <br>
 
-## What spells exist?
+### What spells exist?
 
 Before delving into the specifics of spell distribution across classes and schools of magic, it makes sense to look at how many spells exist at each level and within each school of magic.
 
@@ -21,7 +21,7 @@ First, a CSV file containing spell name, spell level, spell school, and class is
 ![alt text](spell_level_graph.png)
 ![alt text](spell_school_graph-2.png)
 
-## 1. Do some classes have access to more high-level spells than others?
+### 1. Do some classes have access to more high-level spells than others?
 
 These graphs show the number of spells of each level available to full casters. Level 0 signifies cantrips. 
 
@@ -52,7 +52,7 @@ This graph sets the data from the above graphs side-by-side, allowing for an ove
 ![alt text](allschools_graph-2.png)
 
 
-## 2. Are some schools of magic concentrated among specific classes?
+### 2. Are some schools of magic concentrated among specific classes?
 
 These graphs show the number of spells from each school of magic available to each spellcasting class. 
 ![alt text](abjuration_graph-1.png)
@@ -67,7 +67,7 @@ These graphs show the number of spells from each school of magic available to ea
 Below is a comparison between the different spell schools grouped by class.
 ![alt text](combined_graph-1.png)
 
-## 3. Is there a relationship between spell level and school of magic?
+### 3. Is there a relationship between spell level and school of magic?
 
 These graphs show the distribution of spell schools at each spell level.
 ![alt text](cantrips_schools-1.png)
@@ -81,8 +81,8 @@ These graphs show the distribution of spell schools at each spell level.
 ![alt text](lvl8_schools-1.png)
 ![alt text](lvl9_schools-1.png)
 
-Below is a version that shows the spell school 
-![alt text](all_lvls_graph-1.png)
+Below is a version that shows the distribution of the spells in each class. 
+![alt text](allschools_graph-3.png)
 
 
 #### Header 4
