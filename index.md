@@ -55,18 +55,29 @@ This graph sets the data from the above graphs side-by-side, allowing for an ove
 ### 2. Are some schools of magic concentrated among specific classes?
 
 These graphs show the number of spells from each school of magic available to each spellcasting class. 
+
 <img src="abjuration_graph-2.png" width="600">
-![alt text]()
-![alt text](conjuration_graph-1.png)
-![alt text](divination_graph-1.png)
-![alt text](enchantment_graph-1.png)
-![alt text](evocation_graph-1.png)
-![alt text](illusion_graph-1.png)
-![alt text](necromancy_graph-1.png)
-![alt text](transmutation_graph-1.png)
+
+<img src="conjuration_graph-1.png" width="600">
+
+<img src="divination_graph-1.png" width="600">
+
+<img src="enchantment_graph-1.png" width="600">
+
+<img src="evocation_graph-1.png" width="600">
+
+<img src="illusion_graph-1.png" width="600">
+
+<img src="necromancy_graph-1.png" width="600">
+
+<img src="transmutation_graph-1.png" width="600">
+
 
 Below is a comparison between the different spell schools grouped by class.
-![alt text](combined_graph-1.png)
+
+<img src="combined_graph-1.png" width="650">
+<img src="combined_graph-1.png" width="700">
+<img src="combined_graph-1.png" width="800">
 
 ### 3. Is there a relationship between spell level and school of magic?
 
