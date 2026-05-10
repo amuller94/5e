@@ -122,7 +122,7 @@ These graphs show the distribution of spell schools at each spell level.
 <img src="lvl9_schools-1.png" width="600">
 <br>
 <br>
-Below is a version that shows the distribution of the spells in each class. 
+Below is a version that shows the distribution of the spells in each class. Click [here](/allschools_graph-3.png) for a larger view. 
 
 <img src="allschools_graph-3.png" width="800">
 
