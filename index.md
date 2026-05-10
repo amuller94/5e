@@ -3,6 +3,7 @@ This project uses data from a [Dungeons & Dragons API](https://www.dnd5eapi.co/)
 D&D is the most popular tabletop roleplaying game (TTRPG) on the market. This is due in part to its Open Gaming License, which gives third parties blanket permission to create their own game supplements based on the D&D's fundamental mechanics. These fundamental mechanics are detailed in something called the System Reference[System Reference Document](https://www.dndbeyond.com/srd), or SRD. 
 
 This project looks specifically at the spells portion of that content. There are 319 spells in the SRD, each with its own set of rules, including which of the eight included spellcasting class(es) (i.e. wizard, cleric, druid, etc.) can cast that spell; what school of magic (i.e. transmutation, illusion, necromancy, etc.) the spell belongs to; and how powerful the spell is, i.e. its numbered level (0-9). It uses visualizations to explore several questions:
+<br>
 
 > **1. Do some classes have access to more high-level spells than others?**
 >
@@ -18,38 +19,56 @@ Before delving into the specifics of spell distribution across classes and schoo
 
 First, a CSV file containing spell name, spell level, spell school, and class is available for download [here](/assets/class_spell_lists.csv). This only accounts for each class's basic spell lists and does not address bards' access to Magical Secrets, nor any subclass-specific access to spells.
 
-![alt text](spell_level_graph.png)
-![alt text](spell_school_graph-2.png)
+<img src="spell_level_graph.png" width="600">
+<br>
+<img src="spell_school_graph-2.png" width="600">
+
+
 
 ### 1. Do some classes have access to more high-level spells than others?
 
 These graphs show the number of spells of each level available to full casters. Level 0 signifies cantrips. 
-
-![alt text](bard_graph-2.png)
-![alt text](cleric_graph-1.png)
-![alt text](druid_graph-1.png)
-![alt text](sorcerer_graph-1.png)
-![alt text](warlock_graph-1.png)
-![alt text](wizard_graph-1.png)
+<br>
+<img src="bard_graph-2.png" width="600">
+<br>
+<img src="cleric_graph-1.png" width="600">
+<br>
+<img src="druid_graph-1.png" width="600">
+<br>
+<img src="sorcerer_graph-1.png" width="600">
+<br>
+<img src="warlock_graph-1.png" width="600">
+<br>
+<img src="wizard_graph-1.png" width="600">
 
 And of course, our half-casters:
-![alt text](paladin_graph-1.png)
-![alt text](ranger_graph-1.png)
+<br>
+<img src="paladin_graph-1.png" width="600">
+<br>
+<img src="ranger_graph-1.png" width="600">
 
 Below is a comparison between all eight spellcasting classes. 
 ![alt text](class_spell_graph-1.png)
 
 I've also generated a set of graphs showing the schools of spells accessible to only one class, accessible to two classes, etc., going all the way up to seven classes (no spells were accessible to all eight casting classes).
-![alt text](oneschool_graph-1.png)
-![alt text](twoschools_graph-1.png)
-![alt text](threeschools_graph-1.png)
-![alt text](fourschools_graph-1.png)
-![alt text](fiveschools_graph-1.png)
-![alt text](sixschools_graph-2.png)
-![alt text](sevenschools_graph-2.png)
-
+<img src="oneschool_graph-1.png" width="600">
+<br>
+<img src="twoschools_graph-1.png" width="600">
+<br>
+<img src="threeschools_graph-1.png" width="600">
+<br>
+<img src="fourschools_graph-1.png" width="600">
+<br>
+<img src="fiveschools_graph-1.png" width="600">
+<br>
+<img src="sixschools_graph-2.png" width="600">
+<br>
+<img src="sevenschools_graph-2.png" width="600">
+<br>
+<br>
 This graph sets the data from the above graphs side-by-side, allowing for an overall view of the data.
-![alt text](allschools_graph-2.png)
+
+<img src="allschools_graph-2.png" width="800">
 
 
 ### 2. Are some schools of magic concentrated among specific classes?
@@ -57,44 +76,56 @@ This graph sets the data from the above graphs side-by-side, allowing for an ove
 These graphs show the number of spells from each school of magic available to each spellcasting class. 
 
 <img src="abjuration_graph-2.png" width="600">
-
+<br>
 <img src="conjuration_graph-1.png" width="600">
-
+<br>
 <img src="divination_graph-1.png" width="600">
-
+<br>
 <img src="enchantment_graph-1.png" width="600">
-
+<br>
 <img src="evocation_graph-1.png" width="600">
-
+<br>
 <img src="illusion_graph-1.png" width="600">
-
+<br>
 <img src="necromancy_graph-1.png" width="600">
-
+<br>
 <img src="transmutation_graph-1.png" width="600">
-
-
+<br>
+<br>
 Below is a comparison between the different spell schools grouped by class.
 
-<img src="combined_graph-1.png" width="650">
-<img src="combined_graph-1.png" width="700">
 <img src="combined_graph-1.png" width="800">
+<br>
 
 ### 3. Is there a relationship between spell level and school of magic?
 
 These graphs show the distribution of spell schools at each spell level.
-<img src="cantrips_schools-1.png" width="600">
-<img src="lvl1_schools-1.png" width="600">
-<img src="lvl2_schools-1.png" width="600">
-<img src="lvl3_schools-1.png" width="600">
-<img src="lvl4_schools-1.png" width="600">
-<img src="lvl5_schools-1.png" width="600">
-<img src="lvl6_schools-1.png" width="600">
-<img src="lvl7_schools-1.png" width="600">
-<img src="lvl8_schools-1.png" width="600">
-<img src="lvl9_schools-1.png" width="600">
 
+<img src="cantrips_schools-1.png" width="600">
+<br>
+<img src="lvl1_schools-1.png" width="600">
+<br>
+<img src="lvl2_schools-1.png" width="600">
+<br>
+<img src="lvl3_schools-1.png" width="600">
+<br>
+<img src="lvl4_schools-1.png" width="600">
+<br>
+<img src="lvl5_schools-1.png" width="600">
+<br>
+<img src="lvl6_schools-1.png" width="600">
+<br>
+<img src="lvl7_schools-1.png" width="600">
+<br>
+<img src="lvl8_schools-1.png" width="600">
+<br>
+<img src="lvl9_schools-1.png" width="600">
+<br>
+<br>
 Below is a version that shows the distribution of the spells in each class. 
-![alt text](allschools_graph-3.png)
+
+<img src="allschools_graph-3.png" width="800">
+
 
 
 #### Header 4
