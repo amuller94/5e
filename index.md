@@ -16,65 +16,58 @@ This project looks specifically at the spells portion of that content. There are
 
 Before delving into the specifics of spell distribution across classes and schools of magic, it makes sense to look at how many spells exist at each level and within each school of magic.
 
+First, a CSV file containing spell name, spell level, spell school, and class is available for download [here](/assets/class_spell_lists.csv). This only accounts for each class's basic spell lists and does not address bards' access to Magical Secrets, nor any subclass-specific access to spells.
+
 ![alt text](spell_level_graph.png)
 ![alt text](spell_school_graph.png)
 
-### Header 3
+## 1. Do some classes have access to more high-level spells than others?
+
+These graphs show the number of spells of each level available to full casters. Level 0 signifies cantrips. 
+
+![alt text](bard_graph-1.png)
+![alt text](cleric_graph.png)
+![alt text](druid_graph.png) 
+![alt text](sorcerer_graph.png) 
+![alt text](warlock_graph.png) 
+![alt text](wizard_graph.png) 
+
+And of course, our half-casters:
+![alt text](paladin_graph.png)
+![alt text](ranger_graph.png)  
+
+Below is a comparison between all eight spellcasting classes. 
+![alt text](class_spell_graph.png)
+
+## 2. Are some schools of magic concentrated among specific classes?
+
+These graphs show the number of spells from each school of magic available to each spellcasting class. 
+![alt text](abjuration_graph.png)
+![alt text](conjuration_graph.png) 
+![alt text](divination_graph.png) 
+![alt text](enchantment_graph.png)
+![alt text](evocation_graph.png)
+![alt text](illusion_graph.png)  
+![alt text](necromancy_graph.png)
+![alt text](transmutation_graph.png)
+
+Below is a comparison between the different spell schools grouped by class.
+![alt text](combined_graph.png)   
+
+## 3. Is there a relationship between spell level and school of magic?
+
+
 
 ---
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+
 
 #### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
 ##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
 ###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
 ### There's a horizontal rule below this.
 
 * * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
 
 ### And a nested list:
 
