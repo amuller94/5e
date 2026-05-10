@@ -43,9 +43,9 @@ These graphs show the number of spells of each level available to full casters. 
 
 And of course, our half-casters:
 <br>
-<img src="paladin_graph-1.png" width="600">
+<img src="assets/images/paladin_graph-1.png" width="600">
 <br>
-<img src="ranger_graph-1.png" width="600">
+<img src="assets/images/ranger_graph-1.png" width="600">
 
 Below is a comparison between all eight spellcasting classes. 
 ![alt text](assets/images/class_spell_graph-1.png) Click [here](assets/images/class_spell_graph-1.png) for a larger view. 
@@ -67,7 +67,7 @@ I've also generated a set of graphs showing the schools of spells accessible to 
 <img src="assets/images/sevenschools_graph-2.png" width="600">
 <br>
 <br>
-This graph sets the data from the above graphs side-by-side, allowing for an overall view of the data. Click [here](/images/allschools_graph-2.png) for a larger view. 
+This graph sets the data from the above graphs side-by-side, allowing for an overall view of the data. Click [here](assets/images/allschools_graph-2.png) for a larger view. 
 
 <img src="assets/images/allschools_graph-2.png" width="800">
 
@@ -93,7 +93,7 @@ These graphs show the number of spells from each school of magic available to ea
 <img src="assets/images/transmutation_graph-1.png" width="600">
 <br>
 <br>
-Below is a comparison between the different spell schools grouped by class. Click [here](/images/combined_graph-1.png) for a larger view. 
+Below is a comparison between the different spell schools grouped by class. Click [here](assets/images/combined_graph-1.png) for a larger view. 
 
 <img src="assets/images/combined_graph-1.png" width="800">
 <br>
@@ -123,7 +123,7 @@ These graphs show the distribution of spell schools at each spell level.
 <img src="assets/images/lvl9_schools-1.png" width="600">
 <br>
 <br>
-Below is a version that shows the distribution of the spells in each class. Click [here](/images/all_lvls_graph.png) for a larger view. 
+Below is a version that shows the distribution of the spells in each class. Click [here](assets/images/all_lvls_graph.png) for a larger view. 
 
 <img src="assets/images/all_lvls_graph.png" width="800">
 
