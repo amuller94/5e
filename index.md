@@ -82,16 +82,16 @@ Below is a comparison between the different spell schools grouped by class.
 ### 3. Is there a relationship between spell level and school of magic?
 
 These graphs show the distribution of spell schools at each spell level.
-![alt text](cantrips_schools-1.png)
-![alt text](lvl1_schools-1.png)
-![alt text](lvl2_schools-1.png)
-![alt text](lvl3_schools-1.png)
-![alt text](lvl4_schools-1.png)
-![alt text](lvl5_schools-1.png)
-![alt text](lvl6_schools-1.png)
-![alt text](lvl7_schools-1.png)
-![alt text](lvl8_schools-1.png)
-![alt text](lvl9_schools-1.png)
+<img src="cantrips_schools-1.png" width="600">
+<img src="lvl1_schools-1.png" width="600">
+<img src="lvl2_schools-1.png" width="600">
+<img src="lvl3_schools-1.png" width="600">
+<img src="lvl4_schools-1.png" width="600">
+<img src="lvl5_schools-1.png" width="600">
+<img src="lvl6_schools-1.png" width="600">
+<img src="lvl7_schools-1.png" width="600">
+<img src="lvl8_schools-1.png" width="600">
+<img src="lvl9_schools-1.png" width="600">
 
 Below is a version that shows the distribution of the spells in each class. 
 ![alt text](allschools_graph-3.png)
