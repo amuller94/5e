@@ -55,7 +55,7 @@ This graph sets the data from the above graphs side-by-side, allowing for an ove
 ### 2. Are some schools of magic concentrated among specific classes?
 
 These graphs show the number of spells from each school of magic available to each spellcasting class. 
-![alt text](abjuration_graph-1.png)
+![alt text](abjuration_graph-2.png)
 ![alt text](conjuration_graph-1.png)
 ![alt text](divination_graph-1.png)
 ![alt text](enchantment_graph-1.png)
