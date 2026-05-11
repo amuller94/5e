@@ -13,6 +13,132 @@ This project looks specifically at the spells portion of that content. There are
 >
 <br>
 
+### How does the project work?
+
+It uses the [5e API](https://www.dnd5eapi.co/) to pull the following data for each of the 319 spells: spell name, spell level, spell school, class, and subclass. It assigns the correct class to each subclass and the subclass "all" to each class. With the help of the pandas library, these data are then assembled into a dataframe.
+
+```
+df = pd.DataFrame({
+    'Spell Name' : spellname,
+    'Spell Level': spelllevel,
+    'Spell School' : spellschool,
+    'Class' : spellclass,
+    'Subclass' : spellsubclass
+})
+```
+
+In the SRD, each class has only one subclass. This was always going to make subclass data only moderately useful, but mid-project, it was discovered that subclass data in this API was unreliable: every single spell was designated "lore," the SRD bard subclass. This is due to the combination of a bard feature called "Magical Secrets," which gives bards limited access to every spell in the game, plus an error, which is attributing this only to the lore subclass rather than the bard class as a whole. This does preserve the integrity of the bard data—-spells tagged "bard" are all on the core bard spell list--but makes the subclass data less useful for this project's purposes. 
+
+As such, the code filters the data to include only the data for the classes' spell lists:
+
+```
+classSpellLists = df[df['Subclass'] == 'all']
+
+```
+It then pulls the spell level data, counts the number of instances of each level, and sorts this information into a dataframe useable for creating a bar graph.
+
+```
+spellcounts = classSpellLists['Spell Level'].value_counts()
+sortedspellcounts = spellcounts.sort_index()
+```
+
+Through a similar process, it pulls and sorts the number of spells that exist in each spell school.
+
+```
+spellcountsschool = classSpellLists['Spell School'].value_counts()
+sortedspellcountsschool = spellcountsschool.sort_index()
+```
+
+It then pulls only the rows containing bard spells, gathers the rest of the data for those rows, counts how many rows there are for each spell level, and sorts those data, yielding a dataframe that can be used to create a graph of how many spells of each level are on the bard spell list.
+
+```
+bard = classSpellLists['Class'] == 'bard'
+bardSpells = classSpellLists[bard].value_counts('Spell Level').sort_index()
+```
+
+It does the same for the other classes, adding in null rows where no data exists:
+
+```
+paladinSpells = classSpellLists[paladin].value_counts('Spell Level').sort_index()
+paladinSpells[int(0)] = 0
+paladinSpells[int(6)] = 0
+paladinSpells[int(7)] = 0
+paladinSpells[int(8)] = 0
+paladinSpells[int(9)] = 0
+paladinSpells = paladinSpells.sort_index()
+```
+
+To create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
+
+The same process is repeated to create graphs of how many spells of each school each class has:
+
+```
+abjuration = classSpellLists['Spell School'] == 'abjuration'
+abjurationClassSchool = classSpellLists[abjuration].value_counts('Class').sort_index()
+```
+
+And how many spells of each school exist at each spell level:
+
+```
+cantrip = classSpellLists['Spell Level'] == 0
+cantripSchools = classSpellLists[cantrip].value_counts('Spell School').sort_index()
+```
+
+The original dataframe contains one row for each spell for each class, so to determine how many spells of each school are available to how many classes, the code counts how many times each spell name occurs: 
+
+```
+numberOfClasses = classSpellLists.value_counts('Spell Name')
+```
+
+...yielding the following data:
+
+```
+> Spell Name
+> Detect Magic         7
+> Dispel Magic         7
+> Hold Person          6
+> Locate Creature      6
+> Locate Object        6
+>                     ..
+> Meld Into Stone      1
+> Maze                 1
+> Mass Healing Word    1
+> Mass Heal            1
+> Acid Arrow           1
+> Name: count, Length: 319, dtype: int6
+```
+
+...which is then itself counted (for the number of spells available to exactly seven classes, etc.) and sorted. 
+
+```
+classesPerSpell = numberOfClasses.value_counts().sort_index()
+```
+
+The code then re-merges the numberOfClasses list with the spell name data and drops superfluous information to leave a dataframe containing spell name, the classes count for each spell, and the school of magic for each spell.
+
+```
+combined_df = pd.merge(numberOfClasses, classSpellLists, on='Spell Name')
+combined_df = combined_df.drop_duplicates(subset=['Spell Name'])
+combined_df = combined_df.drop(columns = ['Class', 'Subclass', 'Spell Level'])
+```
+
+It then pulls only the spells available to exactly one class and counts how many there are of each spell school, yielding a dataframe that can be used to create a graph of how many of the spells available to exactly one class belong to each school of magic. 
+
+```
+oneclass = combined_df['count'] == 1
+oneSchool = combined_df[oneclass].value_counts('Spell School').sort_index()
+```
+It does the same for the rest of the data, again adding in null rows where no data exists:
+
+```
+fiveSchools = combined_df[fiveclasses].value_counts('Spell School').sort_index()
+fiveSchools['illusion'] = 0
+fiveSchools['necromancy'] = 0
+fiveSchools = fiveSchools.sort_index()
+```
+
+Here, too, to create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
+
 ### What spells exist?
 
 Before delving into the specifics of spell distribution across classes and schools of magic, it makes sense to look at how many spells exist at each level and within each school of magic.
