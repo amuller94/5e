@@ -50,6 +50,8 @@ First, a CSV file containing spell name, spell level, spell school, and class is
 <img src="assets/images/spell_school_graph-2.png" width="600">
 
 
+<details>
+<summary><i>Click for code information</i></summary>
 To create these graphs, the code pulls the spell level data, counts the number of instances of each level, and sorts this information into a dataframe useable for creating a bar graph.
 
 ```
@@ -63,7 +65,7 @@ Through a similar process, it pulls and sorts the number of spells that exist in
 spellcountsschool = classSpellLists['Spell School'].value_counts()
 sortedspellcountsschool = spellcountsschool.sort_index()
 ```
-
+</details>
 
 
 ### 1. Do some classes have access to more high-level spells than others?
@@ -91,7 +93,8 @@ And of course, our half-casters:
 Below is a comparison between all eight spellcasting classes. 
 ![alt text](assets/images/class_spell_graph-1.png) Click [here](assets/images/class_spell_graph-1.png) for a larger view. 
 
-
+<details>
+<summary><i>Click for code information</i></summary>
 To create these graphs, the code pulls only the rows containing bard spells, gathers the rest of the data for those rows, counts how many rows there are for each spell level, and sorts those data, yielding a dataframe that can be used to create a graph of how many spells of each level are on the bard spell list.
 
 ```
@@ -112,7 +115,7 @@ paladinSpells = paladinSpells.sort_index()
 ```
 
 To create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
-
+</details>
 
 I've also generated a set of graphs showing the schools of spells accessible to only one class, accessible to two classes, etc., going all the way up to seven classes (no spells were accessible to all eight casting classes).
 <img src="assets/images/oneschool_graph-1.png" width="600">
@@ -134,6 +137,8 @@ This graph sets the data from the above graphs side-by-side, allowing for an ove
 
 <img src="assets/images/allschools_graph-2.png" width="800">
 
+<details>
+<summary><i>Click for code information</i></summary>
 The original dataframe contains one row for each spell for each class, so to determine how many spells of each school are available to how many classes, the code counts how many times each spell name occurs: 
 
 ```
@@ -188,7 +193,7 @@ fiveSchools = fiveSchools.sort_index()
 ```
 
 Here, too, to create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
-
+</details>
 
 ### 2. Are some schools of magic concentrated among specific classes?
 
@@ -214,7 +219,8 @@ These graphs show the number of spells from each school of magic available to ea
 <br>
 Below is a comparison between the different spell schools grouped by class. Click [here](assets/images/combined_graph-1.png) for a larger view. 
 
-
+<details>
+<summary><i>Click for code information</i></summary>
 To create these graphs, the code pulls only the rows containing abjuration spells, gathers the rest of the data for those rows, counts how many rows there are for each class, and sorts those data, yielding a dataframe that can be used to create a graph of how many spells of each school each class has:
 
 ```
@@ -222,6 +228,7 @@ abjuration = classSpellLists['Spell School'] == 'abjuration'
 abjurationClassSchool = classSpellLists[abjuration].value_counts('Class').sort_index()
 ```
 Again,  to create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
+</details>
 
 <img src="assets/images/combined_graph-1.png" width="800">
 <br>
@@ -252,6 +259,8 @@ These graphs show the distribution of spell schools at each spell level.
 <br>
 <br>
 
+<details>
+<summary><i>Click for code information</i></summary>
 To create these graphs, the code pulls only the rows containing cantrips, gathers the rest of the data for those rows, counts how many rows there are for each spell school, and sorts those data, yielding a dataframe that can be used to create a graph of how many spells of each school exist at each spell level:
 
 ```
@@ -259,7 +268,7 @@ cantrip = classSpellLists['Spell Level'] == 0
 cantripSchools = classSpellLists[cantrip].value_counts('Spell School').sort_index()
 ```
 Again,  to create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
-
+</details>
 Below is a version that shows the distribution of the spells in each class. Click [here](assets/images/all_lvls_graph.png) for a larger view. 
 
 <img src="assets/images/all_lvls_graph.png" width="800">
