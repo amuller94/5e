@@ -251,29 +251,13 @@ Click [here](assets/images/allschools_graph.png) for a larger view.
 <br>
 Now, the above data explore spell specialization through looking at the *exact* numbers of classes with access to each spell--i.e, the spells to which *only* four classes have access. However, this can also be approached cumulatively for another perspective on the same data. Here, the graphs instead show the *total* number of classes with access to a spell--the spells to which *at least* four classes have access. 
 
-The code is very similar:
+The code is very similar:, but uses ```oneclasstotal = combined_df['count'] >= 1``` in place of ```oneclass = combined_df['count'] == 1```.
 
-```
-oneclasstotal = combined_df['count'] >= 1
-twoclasstotal = combined_df['count'] >= 2
-threeclasstotal = combined_df['count'] >= 3
-fourclasstotal = combined_df['count'] >= 4
-fiveclasstotal = combined_df['count'] >= 5
-sixclasstotal = combined_df['count'] >= 6
-sevenclasstotal = combined_df['count'] >= 7
-
-oneSchoolTotal = combined_df[oneclasstotal].value_counts('Spell School').sort_index()
-twoSchoolTotal = combined_df[twoclasstotal].value_counts('Spell School').sort_index()
-threeSchoolTotal = combined_df[threeclasstotal].value_counts('Spell School').sort_index()
-fourSchoolTotal = combined_df[fourclasstotal].value_counts('Spell School').sort_index()
-fiveSchoolTotal = combined_df[fiveclasstotal].value_counts('Spell School').sort_index()
-sixSchoolTotal = combined_df[sixclasstotal].value_counts('Spell School').sort_index()
-sevenSchoolTotal = combined_df[sevenclasstotal].value_counts('Spell School').sort_index()
-```
-
-Producing the below graphs:
 
 <img src="assets/images/oneschooltotal_graph.png" width="600">
+<br>
+<br>
+Evocation and conjuration spells, the two most specialized spells above, still dominate in number when it comes to which spells are most widely available. However, this graph shows the large number of transmutation spells that exist (and are therefore available to at least one class), indicating that transmutation spells are often less highly specialized and accessible to a wider number of classes.
 <br>
 <br>
 <img src="assets/images/twoschooltotal_graph.png" width="600">
@@ -292,10 +276,7 @@ Producing the below graphs:
 <br>
 <br>
 <img src="assets/images/sevenschooltotal_graph.png" width="600">
-
-
-<img src="assets/images/combinedschooltotal_graph.png" width="800">
-Click [here](assets/images/combinedschooltotal_graph.png) for a larger view.
+<br>
 <br>
 
 ## 2. Are some schools of magic concentrated among specific classes?
