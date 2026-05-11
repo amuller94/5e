@@ -76,6 +76,7 @@ This graph sets the data from the above graphs side-by-side, allowing for an ove
 
 These graphs show the number of spells from each school of magic available to each spellcasting class. 
 
+
 <img src="assets/images/abjuration_graph-2.png" width="600">
 <br>
 <img src="assets/images/conjuration_graph-1.png" width="600">
