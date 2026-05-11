@@ -73,7 +73,7 @@ The results:
 There are the most second-level spells, followed closely by 1st and 3rd. There are the fewest 8th and 9th level spells.
 <br>
 <br>
-<img src="assets/images/spell_school_graph-2.png" width="600">
+<img src="assets/images/spell_school_graph.png" width="600">
 <br>
 <br>
 There are far and away more transmutation spells than any other school, with evocation in second place. There are the fewest necromancy spells, followed by illusion.
@@ -110,23 +110,23 @@ paladinGraph = paladinSpells.plot(kind = "bar", title = "Paladin Spells by Level
 
 These graphs show the number of spells of each level available to full casters. Level 0 signifies cantrips. 
 <br>
-<img src="assets/images/bard_graph-2.png" width="600">
+<img src="assets/images/bard_graph.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/cleric_graph-1.png" width="600">
+<img src="assets/images/cleric_graph.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/druid_graph-1.png" width="600">
+<img src="assets/images/druid_graph.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/sorcerer_graph-1.png" width="600">
+<img src="assets/images/sorcerer_graph.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/warlock_graph-1.png" width="600">
+<img src="assets/images/warlock_graph.png" width="600">
 <br>
 <br>
 <br>
@@ -135,11 +135,11 @@ These graphs show the number of spells of each level available to full casters. 
 And of course, our half-casters:
 <br>
 <br>
-<img src="assets/images/paladin_graph-1.png" width="600">
+<img src="assets/images/paladin_graph.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/ranger_graph-1.png" width="600">
+<img src="assets/images/ranger_graph.png" width="600">
 
 To create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
 
@@ -163,9 +163,9 @@ plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', prop={'size': 11})
 ```
 The graph code includes details that shift the location of the key.
 
-Click [here](assets/images/class_spell_graph-1.png) for a larger view of the below graph. 
+Click [here](assets/images/class_spell_graph.png) for a larger view of the below graph. 
 <br>
-<img src="aassets/images/class_spell_graph-1" width="800">
+<img src="aassets/images/class_spell_graph" width="800">
 <br>
 <br>
 
@@ -352,36 +352,36 @@ Producing the below graphs:
 These graphs show the number of spells from each school of magic available to each spellcasting class. 
 <br>
 <br>
-<img src="assets/images/abjuration_graph-2.png" width="600">
+<img src="assets/images/abjuration_graph.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/conjuration_graph-1.png" width="600">
+<img src="assets/images/conjuration_graph.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/divination_graph-1.png" width="600">
+<img src="assets/images/divination_graph.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/enchantment_graph-1.png" width="600">
+<img src="assets/images/enchantment_graph.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/evocation_graph-1.png" width="600">
+<img src="assets/images/evocation_graph.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/illusion_graph-1.png" width="600">
+<img src="assets/images/illusion_graph.png" width="600">
 <br>
 <br>
 <br>
 <br>
-<img src="assets/images/necromancy_graph-1.png" width="600">
+<img src="assets/images/necromancy_graph.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/transmutation_graph-1.png" width="600">
+<img src="assets/images/transmutation_graph.png" width="600">
 <br>
 <br>
 <br>
@@ -399,7 +399,7 @@ abjurationClassSchool = classSpellLists[abjuration].value_counts('Class').sort_i
 Again,  to create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
 
 
-<img src="assets/images/combined_graph-1.png" width="800">
+<img src="assets/images/combined_graph.png" width="800">
 <br>
 <br>
 <br>
@@ -408,42 +408,42 @@ Again,  to create a dataframe that re-combines all of these data into the basis 
 <br>
 These graphs show the distribution of spell schools at each spell level.
 <br>
-<img src="assets/images/cantrips_schools-1.png" width="600">
+<img src="assets/images/cantrips_schools.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/lvl1_schools-1.png" width="600">
+<img src="assets/images/lvl1_schools.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/lvl2_schools-1.png" width="600">
+<img src="assets/images/lvl2_schools.png" width="600">
 <br>
 <br>
-<img src="assets/images/lvl3_schools-1.png" width="600">
-<br>
-<br>
-<br>
-<img src="assets/images/lvl4_schools-1.png" width="600">
+<img src="assets/images/lvl3_schools.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/lvl5_schools-1.png" width="600">
+<img src="assets/images/lvl4_schools.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/lvl6_schools-1.png" width="600">
+<img src="assets/images/lvl5_schools.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/lvl7_schools-1.png" width="600">
+<img src="assets/images/lvl6_schools.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/lvl8_schools-1.png" width="600">
+<img src="assets/images/lvl7_schools.png" width="600">
 <br>
 <br>
 <br>
-<img src="assets/images/lvl9_schools-1.png" width="600">
+<img src="assets/images/lvl8_schools.png" width="600">
+<br>
+<br>
+<br>
+<img src="assets/images/lvl9_schools.png" width="600">
 <br>
 <br>
 
