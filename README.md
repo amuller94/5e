@@ -244,6 +244,8 @@ plt.ylim(0, 5)
 
 Here, too, to create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
 
+Lastly, the code gathers similar information for the _total_ number of classes with access to each spell. The code is nearly identical, but begins with ```oneclasstotal = combined_df['count'] >= 1``` and similar instead of ```oneclass = combined_df['count'] == 1``` and similar.
+
 
 **Further Uses:** I'd love to see this work expanded upon. The code could be used as a template for how one might compare other aspects of spells (i.e. range, damage type, casting time, etc.). It could also be used as a starting point for creating a dynamic version of these graphs, where various data types could be selected and unselected to allow for more focused comparisons between a smaller number of categories. Above all, I'd love to see the code used to compare the 2014 and 2024 versions of spells with each other, exploring how the various attribute distributions changed from one version of the game to the next. As the 2024 API is still under construction, this was not yet something I could do.
 
