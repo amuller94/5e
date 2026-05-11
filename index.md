@@ -37,7 +37,8 @@ classSpellLists = df[df['Subclass'] == 'all']
 ```
 
 This forms the basis for the rest of the data manipulation, which is explained in collapsed sections below.  
-
+<br>
+<br>
 
 ## What spells exist?
 
@@ -53,6 +54,7 @@ First, a CSV file containing spell name, spell level, spell school, and class is
 
 <details>
 <summary><i>Click for code information</i></summary>
+
 To create these graphs, the code pulls the spell level data, counts the number of instances of each level, and sorts this information into a dataframe useable for creating a bar graph.
 
 ```
@@ -71,8 +73,8 @@ sortedspellcountsschool = spellcountsschool.sort_index()
 schoolGraph = sortedspellcountsschool.plot(kind = "bar", title = "Number of Spells Within Each Magic School", color = "purple")
 ```
 </details>
-
-
+<br>
+<br>
 ## 1. Do some classes have access to more high-level spells than others?
 
 These graphs show the number of spells of each level available to full casters. Level 0 signifies cantrips. 
@@ -106,6 +108,7 @@ Below is a comparison between all eight spellcasting classes.
 
 <details>
 <summary><i>Click for code information</i></summary>
+
 To create these graphs, the code pulls only the rows containing bard spells, gathers the rest of the data for those rows, counts how many rows there are for each spell level, and sorts those data, yielding a dataframe that can be used to create a graph of how many spells of each level are on the bard spell list. 
 
 ```
@@ -183,6 +186,7 @@ This graph sets the data from the above graphs side-by-side, allowing for an ove
 
 <details>
 <summary><i>Click for code information</i></summary>
+
 The original dataframe contains one row for each spell for each class, so to determine how many spells of each school are available to how many classes, the code counts how many times each spell name occurs: 
 
 ```
@@ -259,7 +263,8 @@ combinedGraph = combineddf.plot(kind = "bar", figsize = (15, 5), width = 0.8, ti
 legend = plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', prop={'size': 11})
 legend.set_title("Exact number of classes \n that can cast each spell")
 </details>
-
+<br>
+<br>
 ## 2. Are some schools of magic concentrated among specific classes?
 
 These graphs show the number of spells from each school of magic available to each spellcasting class. 
@@ -293,6 +298,7 @@ Below is a comparison between the different spell schools grouped by class. Clic
 
 <details>
 <summary><i>Click for code information</i></summary>
+
 To create these graphs, the code pulls only the rows containing abjuration spells, gathers the rest of the data for those rows, counts how many rows there are for each class, and sorts those data, yielding a dataframe that can be used to create a graph of how many spells of each school each class has:
 
 ```
@@ -304,7 +310,7 @@ Again,  to create a dataframe that re-combines all of these data into the basis 
 
 <img src="assets/images/combined_graph-1.png" width="800">
 <br>
-
+<br>
 ## 3. Is there a relationship between spell level and school of magic?
 
 These graphs show the distribution of spell schools at each spell level.
@@ -342,6 +348,7 @@ These graphs show the distribution of spell schools at each spell level.
 
 <details>
 <summary><i>Click for code information</i></summary>
+
 To create these graphs, the code pulls only the rows containing cantrips, gathers the rest of the data for those rows, counts how many rows there are for each spell school, and sorts those data, yielding a dataframe that can be used to create a graph of how many spells of each school exist at each spell level:
 
 ```
