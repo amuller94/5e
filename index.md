@@ -47,6 +47,7 @@ First, a CSV file containing spell name, spell level, spell school, and class is
 
 <img src="assets/images/spell_level_graph.png" width="600">
 <br>
+<br>
 <img src="assets/images/spell_school_graph-2.png" width="600">
 
 
@@ -78,19 +79,25 @@ These graphs show the number of spells of each level available to full casters. 
 <br>
 <img src="assets/images/bard_graph-2.png" width="600">
 <br>
+<br>
 <img src="assets/images/cleric_graph-1.png" width="600">
+<br>
 <br>
 <img src="assets/images/druid_graph-1.png" width="600">
 <br>
+<br>
 <img src="assets/images/sorcerer_graph-1.png" width="600">
 <br>
+<br>
 <img src="assets/images/warlock_graph-1.png" width="600">
+<br>
 <br>
 <img src="assets/images/wizard_graph.png" width="600">
 
 And of course, our half-casters:
 <br>
 <img src="assets/images/paladin_graph-1.png" width="600">
+<br>
 <br>
 <img src="assets/images/ranger_graph-1.png" width="600">
 
@@ -151,15 +158,21 @@ The graph code includes details that shift the location of the key.
 I've also generated a set of graphs showing the schools of spells accessible to only one class, accessible to two classes, etc., going all the way up to seven classes (no spells were accessible to all eight casting classes).
 <img src="assets/images/oneschool_graph.png" width="600">
 <br>
+<br>
 <img src="assets/images/twoschools_graph.png" width="600">
+<br>
 <br>
 <img src="assets/images/threeschools_graph.png" width="600">
 <br>
+<br>
 <img src="assets/images/fourschools_graph.png" width="600">
+<br>
 <br>
 <img src="assets/images/fiveschools_graph.png" width="600">
 <br>
+<br>
 <img src="assets/images/sixschools_graph.png" width="600">
+<br>
 <br>
 <img src="assets/images/sevenschools_graph.png" width="600">
 <br>
@@ -254,17 +267,24 @@ These graphs show the number of spells from each school of magic available to ea
 
 <img src="assets/images/abjuration_graph-2.png" width="600">
 <br>
+<br>
 <img src="assets/images/conjuration_graph-1.png" width="600">
+<br>
 <br>
 <img src="assets/images/divination_graph-1.png" width="600">
 <br>
+<br>
 <img src="assets/images/enchantment_graph-1.png" width="600">
+<br>
 <br>
 <img src="assets/images/evocation_graph-1.png" width="600">
 <br>
+<br>
 <img src="assets/images/illusion_graph-1.png" width="600">
 <br>
+<br>
 <img src="assets/images/necromancy_graph-1.png" width="600">
+<br>
 <br>
 <img src="assets/images/transmutation_graph-1.png" width="600">
 <br>
@@ -291,21 +311,30 @@ These graphs show the distribution of spell schools at each spell level.
 
 <img src="assets/images/cantrips_schools-1.png" width="600">
 <br>
+<br>
 <img src="assets/images/lvl1_schools-1.png" width="600">
+<br>
 <br>
 <img src="assets/images/lvl2_schools-1.png" width="600">
 <br>
+<br>
 <img src="assets/images/lvl3_schools-1.png" width="600">
+<br>
 <br>
 <img src="assets/images/lvl4_schools-1.png" width="600">
 <br>
+<br>
 <img src="assets/images/lvl5_schools-1.png" width="600">
+<br>
 <br>
 <img src="assets/images/lvl6_schools-1.png" width="600">
 <br>
+<br>
 <img src="assets/images/lvl7_schools-1.png" width="600">
 <br>
+<br>
 <img src="assets/images/lvl8_schools-1.png" width="600">
+<br>
 <br>
 <img src="assets/images/lvl9_schools-1.png" width="600">
 <br>
