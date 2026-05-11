@@ -92,7 +92,6 @@ bardSpells = classSpellLists[bard].value_counts('Spell Level').sort_index()
 bardGraph = bardSpells.plot(kind = "bar", title = "Bard Spells by Level", color = "#0eff58")
 plt.ylim(0, 25) 
 ```
-(It also sets a y axis limit that avoids the y-axis labels from being broken down into 0.5s.)
 
 It does the same for the other classes, adding in null rows where no data exists:
 
@@ -142,7 +141,9 @@ These graphs show the number of spells of each level available to full casters, 
 <img src="assets/images/wizard_graph.png" width="600">
 
 
-To create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used. The resulting graph shows the wizard advantage in number of available spells!
+To create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used. 
+
+The resulting graph shows the advantage held by wizards when it comes to number of available spells!
 <br>
 <br>
 <img src="assets/images/class_spell_graph.png" width="800">
@@ -150,7 +151,66 @@ Click [here](assets/images/class_spell_graph.png) for a larger view.
 <br>
 <br>
 <br>
-I've also generated a set of graphs showing the schools of spells accessible to exactly one class, accessible to exactly two classes, etc., going all the way up to seven classes (no spells were accessible to all eight casting classes). These give us information about the degree of specialization of each school of magic.
+
+
+## 2. Are some schools of magic concentrated among specific classes?
+<br>
+These graphs show the number of spells from each school of magic available to each spellcasting class. 
+<br>
+<br>
+<img src="assets/images/abjuration_graph.png" width="600">
+<br>
+<br>
+<br>
+<img src="assets/images/conjuration_graph.png" width="600">
+<br>
+<br>
+<br>
+<img src="assets/images/divination_graph.png" width="600">
+<br>
+<br>
+<br>
+<img src="assets/images/enchantment_graph.png" width="600">
+<br>
+<br>
+<br>
+<img src="assets/images/evocation_graph.png" width="600">
+<br>
+<br>
+<br>
+<img src="assets/images/illusion_graph.png" width="600">
+<br>
+<br>
+<br>
+<br>
+<img src="assets/images/necromancy_graph.png" width="600">
+<br>
+<br>
+<br>
+<img src="assets/images/transmutation_graph.png" width="600">
+<br>
+<br>
+<br>
+Below is a comparison between the different spell schools grouped by class. Click [here](assets/images/combined_graph.png) for a larger view. 
+<br>
+<br>
+
+To create these graphs, the code pulls only the rows containing abjuration spells, gathers the rest of the data for those rows, counts how many rows there are for each class, and sorts those data, yielding a dataframe that can be used to create a graph of how many spells of each school each class has:
+
+```
+abjuration = classSpellLists['Spell School'] == 'abjuration'
+abjurationClassSchool = classSpellLists[abjuration].value_counts('Class').sort_index()
+```
+
+Again,  to create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
+
+
+<img src="assets/images/combined_graph.png" width="800">
+<br>
+<br>
+<br>
+
+To further explore the question of which schools of magic are concentrated among a smaller number of classes vs. accessible to a wider number, below are a set of graphs showing the schools of spells accessible to exactly one class, accessible to exactly two classes, etc., going all the way up to seven classes (no spells were accessible to all eight casting classes). 
 <br>
 <br>
 <img src="assets/images/oneschool_graph.png" width="600">
@@ -279,73 +339,21 @@ Evocation and conjuration spells, the two most specialized spells above, still d
 <br>
 <br>
 
-## 2. Are some schools of magic concentrated among specific classes?
-<br>
-These graphs show the number of spells from each school of magic available to each spellcasting class. 
-<br>
-<br>
-<img src="assets/images/abjuration_graph.png" width="600">
-<br>
-<br>
-<br>
-<img src="assets/images/conjuration_graph.png" width="600">
-<br>
-<br>
-<br>
-<img src="assets/images/divination_graph.png" width="600">
-<br>
-<br>
-<br>
-<img src="assets/images/enchantment_graph.png" width="600">
-<br>
-<br>
-<br>
-<img src="assets/images/evocation_graph.png" width="600">
-<br>
-<br>
-<br>
-<img src="assets/images/illusion_graph.png" width="600">
-<br>
-<br>
-<br>
-<br>
-<img src="assets/images/necromancy_graph.png" width="600">
-<br>
-<br>
-<br>
-<img src="assets/images/transmutation_graph.png" width="600">
-<br>
-<br>
-<br>
-Below is a comparison between the different spell schools grouped by class. Click [here](assets/images/combined_graph.png) for a larger view. 
-<br>
-<br>
-
-To create these graphs, the code pulls only the rows containing abjuration spells, gathers the rest of the data for those rows, counts how many rows there are for each class, and sorts those data, yielding a dataframe that can be used to create a graph of how many spells of each school each class has:
-
-```
-abjuration = classSpellLists['Spell School'] == 'abjuration'
-abjurationClassSchool = classSpellLists[abjuration].value_counts('Class').sort_index()
-```
-
-Again,  to create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
-
-
-<img src="assets/images/combined_graph.png" width="800">
-<br>
-<br>
-<br>
-
 ## 3. Is there a relationship between spell level and school of magic?
 <br>
 These graphs show the distribution of spell schools at each spell level.
 <br>
+<br>
 <img src="assets/images/cantrips_schools.png" width="600">
 <br>
+<br>
+There are very few abjuration or enchantment cantrips, and a comparative ton of evocation and transmutation cantrips.
 <br>
 <br>
 <img src="assets/images/lvl1_schools.png" width="600">
 <br>
+<br>
+Among first-level spells, necromancy has by far the fewest options.
 <br>
 <br>
 <img src="assets/images/lvl2_schools.png" width="600">
@@ -353,6 +361,8 @@ These graphs show the distribution of spell schools at each spell level.
 <br>
 <img src="assets/images/lvl3_schools.png" width="600">
 <br>
+<br>
+There are no third-level enchantment spells at all.
 <br>
 <br>
 <img src="assets/images/lvl4_schools.png" width="600">
@@ -366,20 +376,26 @@ These graphs show the distribution of spell schools at each spell level.
 <img src="assets/images/lvl6_schools.png" width="600">
 <br>
 <br>
+At higher levels, the comparative number of necromancy spells starts to climb.
+<br>
 <br>
 <img src="assets/images/lvl7_schools.png" width="600">
 <br>
+<br>
+There aren't any enchantment spells at seventh level either, nor are there divination spells.
 <br>
 <br>
 <img src="assets/images/lvl8_schools.png" width="600">
 <br>
 <br>
+This is true again at eighth level.
+<br>
 <br>
 <img src="assets/images/lvl9_schools.png" width="600">
 <br>
+<br>Yet at ninth level, we again see spells of all schools--even if there is only one illusion spell.
 <br>
-
-
+<br>
 To create these graphs, the code pulls only the rows containing cantrips, gathers the rest of the data for those rows, counts how many rows there are for each spell school, and sorts those data, yielding a dataframe that can be used to create a graph of how many spells of each school exist at each spell level:
 
 ```
