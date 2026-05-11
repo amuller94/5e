@@ -12,6 +12,7 @@ This project looks specifically at the spells portion of that content. There are
 ### 3. Is there a relationship between spell level and school of magic?
 
 <br>
+***
 
 ## How does the project work?
 
@@ -26,7 +27,7 @@ df = pd.DataFrame({
     'Subclass' : spellsubclass
 })
 ```
-
+<br>
 In the SRD, each class has only one subclass. This was always going to make subclass data only moderately useful, but mid-project, it was discovered that subclass data in this API was unreliable: every single spell was designated "lore," the SRD bard subclass. This is due to the combination of a bard feature called "Magical Secrets," which gives bards limited access to every spell in the game, plus an error, which is attributing this only to the lore subclass rather than the bard class as a whole. This does preserve the integrity of the bard data—-spells tagged "bard" are all on the core bard spell list--but makes the subclass data less useful for this project's purposes. 
 
 As such, the code filters the data to include only the data for the classes' spell lists:
@@ -39,19 +40,20 @@ classSpellLists = df[df['Subclass'] == 'all']
 This forms the basis for the rest of the data manipulation, which is explained in collapsed sections below.  
 <br>
 <br>
-
+<br>
 ## What spells exist?
 
 Before delving into the specifics of spell distribution across classes and schools of magic, it makes sense to look at how many spells exist at each level and within each school of magic.
 
 First, a CSV file containing spell name, spell level, spell school, and class is available for download [here](/assets/class_spell_lists.csv). This only accounts for each class's basic spell lists and does not address bards' access to Magical Secrets, nor any subclass-specific access to spells.
-
+<br>
 <img src="assets/images/spell_level_graph.png" width="600">
 <br>
 <br>
+<br>
 <img src="assets/images/spell_school_graph-2.png" width="600">
-
-
+<br>
+<br>
 <details>
 <summary><i>Click for code information</i></summary>
 
@@ -75,6 +77,8 @@ schoolGraph = sortedspellcountsschool.plot(kind = "bar", title = "Number of Spel
 </details>
 <br>
 <br>
+<br>
+<br>
 ## 1. Do some classes have access to more high-level spells than others?
 
 These graphs show the number of spells of each level available to full casters. Level 0 signifies cantrips. 
@@ -82,30 +86,39 @@ These graphs show the number of spells of each level available to full casters. 
 <img src="assets/images/bard_graph-2.png" width="600">
 <br>
 <br>
+<br>
 <img src="assets/images/cleric_graph-1.png" width="600">
+<br>
 <br>
 <br>
 <img src="assets/images/druid_graph-1.png" width="600">
 <br>
 <br>
+<br>
 <img src="assets/images/sorcerer_graph-1.png" width="600">
 <br>
 <br>
+<br>
 <img src="assets/images/warlock_graph-1.png" width="600">
+<br>
 <br>
 <br>
 <img src="assets/images/wizard_graph.png" width="600">
 
 And of course, our half-casters:
 <br>
+<br>
 <img src="assets/images/paladin_graph-1.png" width="600">
+<br>
 <br>
 <br>
 <img src="assets/images/ranger_graph-1.png" width="600">
 
-Below is a comparison between all eight spellcasting classes. 
-![alt text](assets/images/class_spell_graph-1.png) Click [here](assets/images/class_spell_graph-1.png) for a larger view. 
-
+Below is a comparison between all eight spellcasting classes. Click [here](assets/images/class_spell_graph-1.png) for a larger view. 
+<br>
+![alt text](assets/images/class_spell_graph-1.png) 
+<br>
+<br>
 <details>
 <summary><i>Click for code information</i></summary>
 
@@ -157,12 +170,15 @@ plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', prop={'size': 11})
 The graph code includes details that shift the location of the key.
 
 </details>
-
+<br>
+<br>
 I've also generated a set of graphs showing the schools of spells accessible to only one class, accessible to two classes, etc., going all the way up to seven classes (no spells were accessible to all eight casting classes).
 <img src="assets/images/oneschool_graph.png" width="600">
 <br>
 <br>
+<br>
 <img src="assets/images/twoschools_graph.png" width="600">
+<br>
 <br>
 <br>
 <img src="assets/images/threeschools_graph.png" width="600">
@@ -171,19 +187,25 @@ I've also generated a set of graphs showing the schools of spells accessible to 
 <img src="assets/images/fourschools_graph.png" width="600">
 <br>
 <br>
+<br>
 <img src="assets/images/fiveschools_graph.png" width="600">
+<br>
 <br>
 <br>
 <img src="assets/images/sixschools_graph.png" width="600">
 <br>
 <br>
+<br>
 <img src="assets/images/sevenschools_graph.png" width="600">
 <br>
 <br>
+<br>
 This graph sets the data from the above graphs side-by-side, allowing for an overall view of the data. Click [here](assets/images/allschools_graph-2.png) for a larger view. 
-
+<br>
+<br>
 <img src="assets/images/allschools_graph.png" width="800">
-
+<br>
+<br>
 <details>
 <summary><i>Click for code information</i></summary>
 
@@ -265,37 +287,48 @@ legend.set_title("Exact number of classes \n that can cast each spell")
 </details>
 <br>
 <br>
+<br>
 ## 2. Are some schools of magic concentrated among specific classes?
-
+<br>
 These graphs show the number of spells from each school of magic available to each spellcasting class. 
-
-
+<br>
+<br>
 <img src="assets/images/abjuration_graph-2.png" width="600">
+<br>
 <br>
 <br>
 <img src="assets/images/conjuration_graph-1.png" width="600">
 <br>
 <br>
+<br>
 <img src="assets/images/divination_graph-1.png" width="600">
+<br>
 <br>
 <br>
 <img src="assets/images/enchantment_graph-1.png" width="600">
 <br>
 <br>
+<br>
 <img src="assets/images/evocation_graph-1.png" width="600">
+<br>
 <br>
 <br>
 <img src="assets/images/illusion_graph-1.png" width="600">
 <br>
 <br>
+<br>
+<br>
 <img src="assets/images/necromancy_graph-1.png" width="600">
+<br>
 <br>
 <br>
 <img src="assets/images/transmutation_graph-1.png" width="600">
 <br>
 <br>
+<br>
 Below is a comparison between the different spell schools grouped by class. Click [here](assets/images/combined_graph-1.png) for a larger view. 
-
+<br>
+<br>
 <details>
 <summary><i>Click for code information</i></summary>
 
@@ -311,14 +344,17 @@ Again,  to create a dataframe that re-combines all of these data into the basis 
 <img src="assets/images/combined_graph-1.png" width="800">
 <br>
 <br>
+<br>
 ## 3. Is there a relationship between spell level and school of magic?
-
+<br>
 These graphs show the distribution of spell schools at each spell level.
-
+<br>
 <img src="assets/images/cantrips_schools-1.png" width="600">
 <br>
 <br>
+<br>
 <img src="assets/images/lvl1_schools-1.png" width="600">
+<br>
 <br>
 <br>
 <img src="assets/images/lvl2_schools-1.png" width="600">
@@ -327,25 +363,30 @@ These graphs show the distribution of spell schools at each spell level.
 <img src="assets/images/lvl3_schools-1.png" width="600">
 <br>
 <br>
+<br>
 <img src="assets/images/lvl4_schools-1.png" width="600">
+<br>
 <br>
 <br>
 <img src="assets/images/lvl5_schools-1.png" width="600">
 <br>
 <br>
+<br>
 <img src="assets/images/lvl6_schools-1.png" width="600">
+<br>
 <br>
 <br>
 <img src="assets/images/lvl7_schools-1.png" width="600">
 <br>
 <br>
+<br>
 <img src="assets/images/lvl8_schools-1.png" width="600">
+<br>
 <br>
 <br>
 <img src="assets/images/lvl9_schools-1.png" width="600">
 <br>
 <br>
-
 <details>
 <summary><i>Click for code information</i></summary>
 
@@ -357,8 +398,11 @@ cantripSchools = classSpellLists[cantrip].value_counts('Spell School').sort_inde
 ```
 Again,  to create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
 </details>
+<br>
+<br>
 Below is a version that shows the distribution of the spells in each class. Click [here](assets/images/all_lvls_graph.png) for a larger view. 
-
+<br>
+<br>
 <img src="assets/images/all_lvls_graph.png" width="800">
 
 
