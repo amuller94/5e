@@ -147,6 +147,7 @@ The resulting graph shows the advantage held by wizards when it comes to number 
 <br>
 <br>
 <img src="assets/images/class_spell_graph.png" width="800">
+<br>
 Click [here](assets/images/class_spell_graph.png) for a larger view. 
 <br>
 <br>
@@ -191,10 +192,14 @@ These graphs show the number of spells from each school of magic available to ea
 <br>
 <br>
 <br>
-Below is a comparison between the different spell schools grouped by class. Click [here](assets/images/combined_graph.png) for a larger view. 
+Below is a comparison between the different spell schools grouped by class. 
 <br>
 <br>
-
+<img src="assets/images/combined_graph.png" width="800">
+<br>
+Click [here](assets/images/combined_graph.png) for a larger view. 
+<br>
+<br>
 To create these graphs, the code pulls only the rows containing abjuration spells, gathers the rest of the data for those rows, counts how many rows there are for each class, and sorts those data, yielding a dataframe that can be used to create a graph of how many spells of each school each class has:
 
 ```
@@ -203,10 +208,6 @@ abjurationClassSchool = classSpellLists[abjuration].value_counts('Class').sort_i
 ```
 
 Again,  to create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
-
-
-<img src="assets/images/combined_graph.png" width="800">
-<br>
 <br>
 <br>
 
@@ -244,6 +245,7 @@ Of the spells available to exactly four classes, the schools of transmutation an
 <br>
 There are just three spells available to exactly six classes: two divination and one enchantment.
 <br>
+<br>
 <img src="assets/images/sevenschools_graph.png" width="600">
 <br>
 <br>
@@ -254,6 +256,7 @@ This graph sets the data from the above graphs side-by-side, allowing for an ove
 <br>
 <br>
 <img src="assets/images/allschools_graph.png" width="800">
+<br>
 Click [here](assets/images/allschools_graph.png) for a larger view. 
 <br>
 <br>
@@ -304,7 +307,9 @@ oneSchoolPlot = oneSchool.plot(kind = "bar", title = "Spells Accessible to Exact
 It does the same for the rest of the data, again adding in null rows where no data exists.
 
 Here, too, to create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used. 
+<br>
 <img src="assets/images/allschools_graph.png" width="800">
+<br>
 Click [here](assets/images/allschools_graph.png) for a larger view.
 
 <br>
@@ -405,9 +410,10 @@ cantripSchools = classSpellLists[cantrip].value_counts('Spell School').sort_inde
 
 Again,  to create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
 
-Below is a version that shows the distribution of the spells in each class. Click [here](assets/images/all_lvls_graph.png) for a larger view. 
+Below is a version that shows the distribution of the spells in each class. 
 <br>
 <br>
 <img src="assets/images/all_lvls_graph.png" width="800">
-
+<br>
+Click [here](assets/images/all_lvls_graph.png) for a larger view. 
 
