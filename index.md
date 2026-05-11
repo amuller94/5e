@@ -12,7 +12,7 @@ This project looks specifically at the spells portion of that content. There are
 ### 3. Is there a relationship between spell level and school of magic?
 
 <br>
-***
+* * *
 
 ## How does the project work?
 
@@ -417,3 +417,4 @@ Below is a version that shows the distribution of the spells in each class.
 <br>
 Click [here](assets/images/all_lvls_graph.png) for a larger view. 
 
+* * *
