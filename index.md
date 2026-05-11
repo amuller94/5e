@@ -46,15 +46,8 @@ This forms the basis for the rest of the data manipulation.
 Before delving into the specifics of spell distribution across classes and schools of magic, it makes sense to look at how many spells exist at each level and within each school of magic.
 
 First, a CSV file containing spell name, spell level, spell school, and class is available for download [here](/assets/class_spell_lists.csv). This only accounts for each class's basic spell lists and does not address bards' access to Magical Secrets, nor any subclass-specific access to spells.
-<br>
-<img src="assets/images/spell_level_graph.png" width="600">
-<br>
-<br>
-<br>
-<img src="assets/images/spell_school_graph-2.png" width="600">
-<br>
-<br>
-To create these graphs, the code pulls the spell level data, counts the number of instances of each level, and sorts this information into a dataframe useable for creating a bar graph.
+
+Then, to gather the data necessary to create relevant graphs, the code pulls the spell level data, counts the number of instances of each level, and sorts this information into a dataframe useable for creating a bar graph.
 
 ```
 spellcounts = classSpellLists['Spell Level'].value_counts()
@@ -71,12 +64,49 @@ sortedspellcountsschool = spellcountsschool.sort_index()
 
 schoolGraph = sortedspellcountsschool.plot(kind = "bar", title = "Number of Spells Within Each Magic School", color = "purple")
 ```
+The results:
 
+<br>
+<img src="assets/images/spell_level_graph.png" width="600">
+<br>
+<br>
+There are the most second-level spells, followed closely by 1st and 3rd. There are the fewest 8th and 9th level spells.
+<br>
+<br>
+<img src="assets/images/spell_school_graph-2.png" width="600">
+<br>
+<br>
+There are far and away more transmutation spells than any other school, with evocation in second place. There are the fewest necromancy spells, followed by illusion.
 <br>
 <br>
 <br>
 
 ## 1. Do some classes have access to more high-level spells than others?
+
+To answer this question, the code pulls only the rows containing bard spells, gathers the rest of the data for those rows, counts how many rows there are for each spell level, and sorts those data, yielding a dataframe that can be used to create a graph of how many spells of each level are on the bard spell list. 
+
+```
+bard = classSpellLists['Class'] == 'bard'
+bardSpells = classSpellLists[bard].value_counts('Spell Level').sort_index()
+
+bardGraph = bardSpells.plot(kind = "bar", title = "Bard Spells by Level", color = "#0eff58")
+plt.ylim(0, 25) 
+```
+(It also sets a y axis limit that avoids the y-axis labels from being broken down into 0.5s.)
+
+It does the same for the other classes, adding in null rows where no data exists:
+
+```
+paladinSpells = classSpellLists[paladin].value_counts('Spell Level').sort_index()
+paladinSpells[int(0)] = 0
+paladinSpells[int(6)] = 0
+paladinSpells[int(7)] = 0
+paladinSpells[int(8)] = 0
+paladinSpells[int(9)] = 0
+paladinSpells = paladinSpells.sort_index()
+
+paladinGraph = paladinSpells.plot(kind = "bar", title = "Paladin Spells by Level", color = "#ff752d")
+```
 
 These graphs show the number of spells of each level available to full casters. Level 0 signifies cantrips. 
 <br>
@@ -111,37 +141,6 @@ And of course, our half-casters:
 <br>
 <img src="assets/images/ranger_graph-1.png" width="600">
 
-Below is a comparison between all eight spellcasting classes. Click [here](assets/images/class_spell_graph-1.png) for a larger view. 
-<br>
-![alt text](assets/images/class_spell_graph-1.png) 
-<br>
-<br>
-
-To create these graphs, the code pulls only the rows containing bard spells, gathers the rest of the data for those rows, counts how many rows there are for each spell level, and sorts those data, yielding a dataframe that can be used to create a graph of how many spells of each level are on the bard spell list. 
-
-```
-bard = classSpellLists['Class'] == 'bard'
-bardSpells = classSpellLists[bard].value_counts('Spell Level').sort_index()
-
-bardGraph = bardSpells.plot(kind = "bar", title = "Bard Spells by Level", color = "#0eff58")
-plt.ylim(0, 25) 
-```
-(It also sets a y axis limit that avoids the y-axis labels from being broken down into 0.5s.)
-
-It does the same for the other classes, adding in null rows where no data exists:
-
-```
-paladinSpells = classSpellLists[paladin].value_counts('Spell Level').sort_index()
-paladinSpells[int(0)] = 0
-paladinSpells[int(6)] = 0
-paladinSpells[int(7)] = 0
-paladinSpells[int(8)] = 0
-paladinSpells[int(9)] = 0
-paladinSpells = paladinSpells.sort_index()
-
-paladinGraph = paladinSpells.plot(kind = "bar", title = "Paladin Spells by Level", color = "#ff752d")
-```
-
 To create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
 
 ```
@@ -164,11 +163,23 @@ plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', prop={'size': 11})
 ```
 The graph code includes details that shift the location of the key.
 
+Click [here](assets/images/class_spell_graph-1.png) for a larger view of the below graph. 
+<br>
+<img src="aassets/images/class_spell_graph-1" width="800">
+<br>
+<br>
+
+
+
 <br>
 <br>
 I've also generated a set of graphs showing the schools of spells accessible to only one class, accessible to two classes, etc., going all the way up to seven classes (no spells were accessible to all eight casting classes).
+<br>
+<br>
 <img src="assets/images/oneschool_graph.png" width="600">
 <br>
+<br>
+Evocation and conjuration spells appear to be by far the most specialized. From data further down the page, we can know that these two spell schools are concentrated in the wizard spell list.
 <br>
 <br>
 <img src="assets/images/twoschools_graph.png" width="600">
@@ -178,8 +189,13 @@ I've also generated a set of graphs showing the schools of spells accessible to 
 <img src="assets/images/threeschools_graph.png" width="600">
 <br>
 <br>
+This is the last graph that has more than ten spells in any school, with transmutation being the school most commonly available to exactly three classes.
+<br>
+<br>
 <img src="assets/images/fourschools_graph.png" width="600">
 <br>
+<br>
+Of the spells available to exactly four classes, the schools of transmutation and enchantment the most common, with eight spells of those schools being available to exactly four classes. Abjuration runs a close second, with seven spells. These schools of magic are widespread, but not too widespread.
 <br>
 <br>
 <img src="assets/images/fiveschools_graph.png" width="600">
@@ -189,9 +205,12 @@ I've also generated a set of graphs showing the schools of spells accessible to 
 <img src="assets/images/sixschools_graph.png" width="600">
 <br>
 <br>
+There are just three spells available to exactly six classes: two divination and one enchantment.
 <br>
 <img src="assets/images/sevenschools_graph.png" width="600">
 <br>
+<br>
+And there are just two spells available to seven casting classes: one abjuration spell and one divination spell.
 <br>
 <br>
 This graph sets the data from the above graphs side-by-side, allowing for an overall view of the data. Click [here](assets/images/allschools_graph-2.png) for a larger view. 
@@ -282,6 +301,50 @@ legend.set_title("Exact number of classes \n that can cast each spell")
 ```
 <br>
 <br>
+Now, the above data explore spell specialization through looking at the *exact* numbers of classes with access to each spell--i.e, the spells to which *only* four classes have access. However, this can also be approached cumulatively for another perspective on the same data. Here, the graphs instead show the *total* number of classes with access to a spell--the spells to which *at least* four classes have access. 
+
+The code is very similar:
+
+```
+oneclasstotal = combined_df['count'] >= 1
+twoclasstotal = combined_df['count'] >= 2
+threeclasstotal = combined_df['count'] >= 3
+fourclasstotal = combined_df['count'] >= 4
+fiveclasstotal = combined_df['count'] >= 5
+sixclasstotal = combined_df['count'] >= 6
+sevenclasstotal = combined_df['count'] >= 7
+
+oneSchoolTotal = combined_df[oneclasstotal].value_counts('Spell School').sort_index()
+twoSchoolTotal = combined_df[twoclasstotal].value_counts('Spell School').sort_index()
+threeSchoolTotal = combined_df[threeclasstotal].value_counts('Spell School').sort_index()
+fourSchoolTotal = combined_df[fourclasstotal].value_counts('Spell School').sort_index()
+fiveSchoolTotal = combined_df[fiveclasstotal].value_counts('Spell School').sort_index()
+sixSchoolTotal = combined_df[sixclasstotal].value_counts('Spell School').sort_index()
+sevenSchoolTotal = combined_df[sevenclasstotal].value_counts('Spell School').sort_index()
+```
+
+Producing the below graphs:
+
+<img src="assets/images/oneschooltotal_graph.png" width="600">
+<br>
+<br>
+<img src="assets/images/twoschooltotal_graph.png" width="600">
+<br>
+<br>
+<img src="assets/images/threeschooltotal_graph.png" width="600">
+<br>
+<br>
+<img src="assets/images/fourschooltotal_graph.png" width="600">
+<br>
+<br>
+<img src="assets/images/fiveschooltotal_graph.png" width="600">
+<br>
+<br>
+<img src="assets/images/sixschooltotal_graph.png" width="600">
+<br>
+<br>
+<img src="assets/images/sevenschooltotal_graph.png" width="600">
+
 <br>
 
 ## 2. Are some schools of magic concentrated among specific classes?
