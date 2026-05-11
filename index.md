@@ -108,7 +108,8 @@ paladinSpells = paladinSpells.sort_index()
 paladinGraph = paladinSpells.plot(kind = "bar", title = "Paladin Spells by Level", color = "#ff752d")
 ```
 
-These graphs show the number of spells of each level available to full casters. Level 0 signifies cantrips. 
+These graphs show the number of spells of each level available to full casters, with level 0 signifying cantrips. They are broadly similar, with the exception of the half-casters (paladin and ranger), which only have spells of levels 1-5. In general, fourth-level spells show the most variation in number from class to class.
+<br>
 <br>
 <img src="assets/images/bard_graph.png" width="600">
 <br>
@@ -122,6 +123,14 @@ These graphs show the number of spells of each level available to full casters. 
 <br>
 <br>
 <br>
+<img src="assets/images/paladin_graph.png" width="600">
+<br>
+<br>
+<br>
+<img src="assets/images/ranger_graph.png" width="600">
+<br>
+<br>
+<br>
 <img src="assets/images/sorcerer_graph.png" width="600">
 <br>
 <br>
@@ -132,48 +141,16 @@ These graphs show the number of spells of each level available to full casters. 
 <br>
 <img src="assets/images/wizard_graph.png" width="600">
 
-And of course, our half-casters:
-<br>
-<br>
-<img src="assets/images/paladin_graph.png" width="600">
-<br>
-<br>
-<br>
-<img src="assets/images/ranger_graph.png" width="600">
 
-To create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
-
-```
-combined_df = pd.merge(bardSpells, clericSpells, on='Spell Level')
-combined_df = pd.merge(combined_df, druidSpells, on='Spell Level')
-combined_df.columns = ['Bard', 'Cleric', 'Druid']
-combined_df = pd.merge(combined_df, paladinSpells, on='Spell Level')
-combined_df.columns = ['Bard', 'Cleric', 'Druid', 'Paladin']
-combined_df = pd.merge(combined_df, rangerSpells, on='Spell Level')
-combined_df.columns = ['Bard', 'Cleric', 'Druid', 'Paladin', 'Ranger']
-combined_df = pd.merge(combined_df, sorcererSpells, on='Spell Level')
-combined_df.columns = ['Bard', 'Cleric', 'Druid', 'Paladin', 'Ranger', 'Sorcerer']
-combined_df = pd.merge(combined_df, warlockSpells, on='Spell Level')
-combined_df.columns = ['Bard', 'Cleric', 'Druid', 'Paladin', 'Ranger', 'Sorcerer', 'Warlock']
-combined_df = pd.merge(combined_df, wizardSpells, on='Spell Level')
-combined_df.columns = ['Bard', 'Cleric', 'Druid', 'Paladin', 'Ranger', 'Sorcerer', 'Warlock', 'Wizard']
-
-combinedSpellGraph = combined_df.plot(kind = "bar", figsize = (15, 5), width = 0.8, color = ["#0eff58", "#b1dc00", "#f5af00", "#ff752d","#ff3274","#ff1bb6","#ba4deb","#006aff"])
-plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', prop={'size': 11})
-```
-The graph code includes details that shift the location of the key.
-
-Click [here](assets/images/class_spell_graph.png) for a larger view of the below graph. 
-<br>
-<img src="aassets/images/class_spell_graph" width="800">
+To create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used. The resulting graph shows the wizard advantage in number of available spells!
 <br>
 <br>
-
-
-
+<img src="assets/images/class_spell_graph.png" width="800">
+Click [here](assets/images/class_spell_graph.png) for a larger view. 
 <br>
 <br>
-I've also generated a set of graphs showing the schools of spells accessible to only one class, accessible to two classes, etc., going all the way up to seven classes (no spells were accessible to all eight casting classes).
+<br>
+I've also generated a set of graphs showing the schools of spells accessible to exactly one class, accessible to exactly two classes, etc., going all the way up to seven classes (no spells were accessible to all eight casting classes). These give us information about the degree of specialization of each school of magic.
 <br>
 <br>
 <img src="assets/images/oneschool_graph.png" width="600">
@@ -213,20 +190,21 @@ There are just three spells available to exactly six classes: two divination and
 And there are just two spells available to seven casting classes: one abjuration spell and one divination spell.
 <br>
 <br>
-This graph sets the data from the above graphs side-by-side, allowing for an overall view of the data. Click [here](assets/images/allschools_graph-2.png) for a larger view. 
+This graph sets the data from the above graphs side-by-side, allowing for an overall view of the data. 
 <br>
 <br>
 <img src="assets/images/allschools_graph.png" width="800">
+Click [here](assets/images/allschools_graph.png) for a larger view. 
 <br>
 <br>
 
-The original dataframe contains one row for each spell for each class, so to determine how many spells of each school are available to how many classes, the code counts how many times each spell name occurs: 
+To gather these data, the code counts how many times each spell name occurs in the original dataframe (which has one row for each class for each spell): 
 
 ```
 numberOfClasses = classSpellLists.value_counts('Spell Name')
 ```
 
-...yielding the following data:
+...yielding the following data, which is then itself counted and sorted.
 
 ```
 > Spell Name
@@ -242,14 +220,9 @@ numberOfClasses = classSpellLists.value_counts('Spell Name')
 > Mass Heal            1
 > Acid Arrow           1
 > Name: count, Length: 319, dtype: int6
-```
 
-...which is then itself counted (for the number of spells available to exactly seven classes, etc.) and sorted. 
-
-```
 classesPerSpell = numberOfClasses.value_counts().sort_index()
 ```
-
 
 The code then re-merges the numberOfClasses list with the spell name data and drops superfluous information to leave a dataframe containing spell name, the classes count for each spell, and the school of magic for each spell.
 
@@ -268,37 +241,12 @@ oneSchool = combined_df[oneclass].value_counts('Spell School').sort_index()
 oneSchoolPlot = oneSchool.plot(kind = "bar", title = "Spells Accessible to Exactly One Class", color = "#005177")
 ```
 
-It does the same for the rest of the data, again adding in null rows where no data exists (and setting a y-limit on the graph to avoid half-integer labels):
+It does the same for the rest of the data, again adding in null rows where no data exists.
 
-```
-fiveSchools = combined_df[fiveclasses].value_counts('Spell School').sort_index()
-fiveSchools['illusion'] = 0
-fiveSchools['necromancy'] = 0
-fiveSchools = fiveSchools.sort_index()
+Here, too, to create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used. 
+<img src="assets/images/allschools_graph.png" width="800">
+Click [here](assets/images/allschools_graph.png) for a larger view.
 
-fiveSchoolsPlot = fiveSchools.plot(kind = "bar", title = "Spells Accessible to Exactly Five Classes", color = "#f95882")
-plt.ylim(0, 5) 
-```
-
-Here, too, to create a dataframe that re-combines all of these data into the basis for a multiple bar graph setting the eight graphs alongside each other, the function ```pd.merge``` is used.
-
-```
-combineddf = pd.merge(oneSchool, twoSchools, on='Spell School')
-combineddf = pd.merge(combineddf, threeSchools, on='Spell School')
-combineddf.columns = ['1 Class', '2 Classes', '3 Classes']
-combineddf = pd.merge(combineddf, fourSchools, on='Spell School')
-combineddf.columns = ['1 Class', '2 Classes', '3 Classes', '4 Classes']
-combineddf = pd.merge(combineddf, fiveSchools, on='Spell School')
-combineddf.columns = ['1 Class', '2 Classes', '3 Classes', '4 Classes', '5 Classes']
-combineddf = pd.merge(combineddf, sixSchools, on='Spell School')
-combineddf.columns = ['1 Class', '2 Classes', '3 Classes', '4 Classes', '5 Classes', '6 Classes']
-combineddf = pd.merge(combineddf, sevenSchools, on='Spell School')
-combineddf.columns = ['1 Class', '2 Classes', '3 Classes', '4 Classes', '5 Classes', '6 Classes', '7 Classes']
-
-combinedGraph = combineddf.plot(kind = "bar", figsize = (15, 5), width = 0.8, title = "For each school of magic, how many spells are specialized vs. widely available? ",  color = ["#005177","#455b9b","#895bac","#ca55a3","#f95882","#ff7652","#ffa600"])
-legend = plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', prop={'size': 11})
-legend.set_title("Exact number of classes \n that can cast each spell")
-```
 <br>
 <br>
 Now, the above data explore spell specialization through looking at the *exact* numbers of classes with access to each spell--i.e, the spells to which *only* four classes have access. However, this can also be approached cumulatively for another perspective on the same data. Here, the graphs instead show the *total* number of classes with access to a spell--the spells to which *at least* four classes have access. 
@@ -345,6 +293,9 @@ Producing the below graphs:
 <br>
 <img src="assets/images/sevenschooltotal_graph.png" width="600">
 
+
+<img src="assets/images/combinedschooltotal_graph.png" width="800">
+Click [here](assets/images/combinedschooltotal_graph.png) for a larger view.
 <br>
 
 ## 2. Are some schools of magic concentrated among specific classes?
@@ -385,7 +336,7 @@ These graphs show the number of spells from each school of magic available to ea
 <br>
 <br>
 <br>
-Below is a comparison between the different spell schools grouped by class. Click [here](assets/images/combined_graph-1.png) for a larger view. 
+Below is a comparison between the different spell schools grouped by class. Click [here](assets/images/combined_graph.png) for a larger view. 
 <br>
 <br>
 
