@@ -212,6 +212,15 @@ Again,  to create a dataframe that re-combines all of these data into the basis 
 <br>
 
 To further explore the question of which schools of magic are concentrated among a smaller number of classes vs. accessible to a wider number, below are a set of graphs showing the schools of spells accessible to exactly one class, accessible to exactly two classes, etc., going all the way up to seven classes (no spells were accessible to all eight casting classes). 
+
+First, a graph of how many classes can access each spell, with no overlap (i.e. 1 = only one class, not at least one class):
+<img src="assets/images/classes_per_spell_graph.png" width="600">
+<br>
+<br>
+For a list of exactly how many classes can access each spell, view a csv [here](assets/classes_per_spell.csv).
+<br>
+<br>
+Next, a breakdown:
 <br>
 <br>
 <img src="assets/images/oneschool_graph.png" width="600">
