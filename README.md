@@ -1,8 +1,10 @@
 
-**Project Title:** (De)coding the Spellbook: A Comparative Look at Spell Distribution in D&D 5th Edition
+# Project Title
+(De)coding the Spellbook: A Comparative Look at Spell Distribution in D&D 5th Edition
 
 
-**Project Description:** This project draws on an API to create visualizations of some of the different patterns in spell distribution within the 5th Edition (2014) Dungeons & Dragons game system. The [API](https://www.dnd5eapi.co/) is built from the D&D [System Reference Document](https://www.dndbeyond.com/srd) (SRD), the game's most fundamental rule set, designed to be used as a no-license-needed base for third-party content. 
+# Project Description
+This project draws on an API to create visualizations of some of the different patterns in spell distribution within the 5th Edition (2014) Dungeons & Dragons game system. The [API](https://www.dnd5eapi.co/) is built from the D&D [System Reference Document](https://www.dndbeyond.com/srd) (SRD), the game's most fundamental rule set, designed to be used as a no-license-needed base for third-party content. 
 
 This project looks specifically at the spells portion of that content, which consists of 319 individual items. Each spell has its own set of rules, including which class(es) (i.e. wizard, cleric, druid, etc.) can cast that spell, what school of magic (i.e. transmutation, illusion, necromancy, etc.) the spell belongs to, and what numbered level (0-9) the spell belongs to. This project explores three major questions using visualizations of various data:
 
@@ -12,10 +14,12 @@ This project looks specifically at the spells portion of that content, which con
 
 
 
-**Rationale Statement:** The primary rationale behind the project is simply that I've always been interested in what these types of comparisons within the D&D ruleset would show, and now I have the skillset to find out. While the SRD's content is also available on a number of GUI-based websites, it would've been an enormous amount of work to pull each piece of information manually and collate it all into an Excel document. With Python and an API, that takes just a handful of lines of code, so my time and effort can be put into arranging the data into specific subsets for comparison and creating visualizations. I've been tremendously excited to see the outcomes.
+# Rationale Statement
+The primary rationale behind the project is simply that I've always been interested in what these types of comparisons within the D&D ruleset would show, and now I have the skillset to find out. While the SRD's content is also available on a number of GUI-based websites, it would've been an enormous amount of work to pull each piece of information manually and collate it all into an Excel document. With Python and an API, that takes just a handful of lines of code, so my time and effort can be put into arranging the data into specific subsets for comparison and creating visualizations. I've been tremendously excited to see the outcomes.
 
 
-**Workflow:** The code uses the *requests* library to gather data from the API and the *matplotlib* library to make some minor adjustments to graph layout to improve readability. It also uses the library *pandas* for data analysis and manipulation.
+# Workflow
+The code uses the *requests* library to gather data from the API and the *matplotlib* library to make some minor adjustments to graph layout to improve readability. It also uses the library *pandas* for data analysis and manipulation.
 
 It uses the [5e API](https://www.dnd5eapi.co/) to pull the following data for each of the 319 spells: spell name, spell level, spell school, class, and subclass. It assigns the correct class to each subclass and the subclass "all" to each class. With the help of the pandas library, these data are then assembled into a dataframe.
 
@@ -225,7 +229,7 @@ Lastly, the code gathers similar information for the _total_ number of classes w
 
 
 
-**Files List:** 
+# Files List
 
 - Muller_Final_Project.ipynb - The project's code.
 - classes_per_spell.csv - A list of how many classes each of the 319 spells is available to.
